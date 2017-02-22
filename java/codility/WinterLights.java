@@ -1,7 +1,10 @@
+package codility;
+
 import java.util.HashMap;
 import java.util.Map;
 
 class Solution {
+
   public int solution(String S) {
     int res = 0;
     for (int i = 0; i < S.length(); i++) {
@@ -11,6 +14,7 @@ class Solution {
     }
     return res;
   }
+
   private boolean canReverse(String S) {
     Map<Character, Integer> hm = new HashMap<>();
     for (char c : S.toCharArray()) {
@@ -26,4 +30,5 @@ class Solution {
     }
     return true;
   }
+  
 }

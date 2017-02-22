@@ -1,4 +1,5 @@
 public class Parity1 {
+
     private static int[] LUT = new int[0xFF + 1];
 
     private static int parity1(int x) {
@@ -9,7 +10,7 @@ public class Parity1 {
         }
         return p;
     }
-  
+
     private static int parity2(int x) {
         int p = 0;
         while (x != 0) {
@@ -28,7 +29,7 @@ public class Parity1 {
         p ^= LUT[(x >> 24) & 0xFF];
         return p;
     }
-  
+
     private static void lutGen() {
         for (int i = 0; i <= 0xFF; i++) {
             LUT[i] = parity1(i);
@@ -51,4 +52,5 @@ public class Parity1 {
 
         System.out.println("All tests passed.");
     }
+    
 }

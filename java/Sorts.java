@@ -6,6 +6,7 @@ import java.util.Queue;
 import java.util.Random;
 
 public class Sorts {
+
   private static List<Integer> randArray(int len) {
     Random rand = new Random();
     List<Integer> out = new ArrayList<>();
@@ -193,4 +194,5 @@ public class Sorts {
     System.out.println("Quick Sort");
     check(sorted, sortQuick(copy(original)));
   }
+  
 }

@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Set;
 
 class UniqueChar {
+
   public static void main(String[] args) {
     List<String> testList = new ArrayList<>();
     testList.add("");
@@ -33,4 +34,5 @@ class UniqueChar {
     }
     return true;
   }
+  
 }

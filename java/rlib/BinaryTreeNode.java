@@ -1,18 +1,14 @@
 package rlib;
 
 public class BinaryTreeNode<T> {
-  private T data;
-  private BinaryTreeNode<T> left;
-  private BinaryTreeNode<T> right;
 
-  public BinaryTreeNode<T>() {
-    this.data = null;
-    this.left = null;
-    this.right = null;
-  }
+  public T data = null;
+  public BinaryTreeNode<T> left = null;
+  public BinaryTreeNode<T> right = null;
 
-  public BinaryTreeNode<T>(T aData) {
+  public BinaryTreeNode(T aData) {
     this.data = aData;
   }
+  
 }
 
