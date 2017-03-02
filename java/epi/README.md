@@ -1,27 +1,26 @@
 ## Elements of Programming Interviews
 
-* I make heavy use of the official solution's test code.
+I make heavy use of the official solution's test code.
 
-### Chapters
-5. Primitive Types
-6. Arrays
-    ⋅⋅6.4: JumpGame
-7. Strings
-8. Linked Lists
-9. Stacks & Queues
-10. Binary Trees
-11. Heaps
-12. Searching
-13. Hash Tables
-14. Sorting
-15. Binary Search Trees
-16. Recursion
-17. Dynamic Programming
-18. Greedy & Invariants
-19. Graphs
-20. Parallel Computing
-21. Design Problems
-22. Language Specific
-23. OO Design
-24. Common Tools
-25. Honors Class
+1. Primitive Types
+2. Arrays
+    1. [JumpGame.java](./JumpGame.java)
+3. Strings
+4. Linked Lists
+5. Stacks & Queues
+6. Binary Trees
+7. Heaps
+8. Searching
+9. Hash Tables
+10. Sorting
+11. Binary Search Trees
+12. Recursion
+13. Dynamic Programming
+14. Greedy & Invariants
+15. Graphs
+26. Parallel Computing
+27. Design Problems
+28. Language Specific
+29. OO Design
+30. Common Tools
+31. Honors Class
