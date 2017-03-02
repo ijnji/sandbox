@@ -5,13 +5,18 @@ package epi;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
-import java.util.stream.IntStream;
 
 public class JumpGame {
 
   private static boolean canReachEnd(List<Integer> maxAdvanceSteps) {
+    List<Integer> que = new LinkedList<>();
+    que.add(new ArrayList<Integer>(maxAdvanceSteps.get(0)));
+    while (que.size() > 0) {
+      List<Integer> cur = que.
+    }
     return false;
   }
 
@@ -28,9 +33,8 @@ public class JumpGame {
     Random r = new Random();
     final int N = r.nextInt(1000) + 1;
     List<Integer> maxAdvanceSteps = new ArrayList<>(N);
-    IntStream.range(0, N).forEach(n -> {
+    for (int i = 0; i < N; i++)
       maxAdvanceSteps.add(r.nextInt(10) + 1);
-    });
     System.out.println(canReachEnd(maxAdvanceSteps));
   }
 
