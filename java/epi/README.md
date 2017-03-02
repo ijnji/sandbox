@@ -5,7 +5,7 @@ My solutions for the problems in this book.  It's really nice how the problems a
 #### Categories
 1. Primitive Types
 2. Arrays
-    1. [JumpGame](./JumpGame.java)
+    1. [(6.4) JumpGame](./JumpGame.java)
 3. Strings
 4. Linked Lists
 5. Stacks & Queues
