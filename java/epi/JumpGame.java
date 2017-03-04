@@ -3,19 +3,21 @@
 //   Return if it's possible to move to last index of A starting from i = 0.
 package epi;
 
+import java.lang.Math;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
 
 public class JumpGame {
 
   private static boolean canReachEnd(List<Integer> maxAdvanceSteps) {
-    List<Integer> que = new LinkedList<>();
-    que.add(new ArrayList<Integer>(maxAdvanceSteps.get(0)));
-    while (que.size() > 0) {
-      List<Integer> cur = que.
+    int end = maxAdvanceSteps.size() - 1;
+    int max = 0;
+    for (int i = 0; i < maxAdvanceSteps.size(); i++) {
+      if (i > max) return false;
+      max = Math.max(max, i + maxAdvanceSteps.get(i));
+      if (max >= end) return true;
     }
     return false;
   }
@@ -30,12 +32,6 @@ public class JumpGame {
 
   public static void main(String[] args) {
     smallTest();
-    Random r = new Random();
-    final int N = r.nextInt(1000) + 1;
-    List<Integer> maxAdvanceSteps = new ArrayList<>(N);
-    for (int i = 0; i < N; i++)
-      maxAdvanceSteps.add(r.nextInt(10) + 1);
-    System.out.println(canReachEnd(maxAdvanceSteps));
   }
 
 }
