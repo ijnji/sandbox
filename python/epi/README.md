@@ -1,11 +1,11 @@
 ### Elements of Programming Interviews
 
-My Java solutions for the problems in this book.  It's really nice how the problems are also a tour of a variety of topics in computing.  I make heavy use of the official solution's test code.  You can find them at the book's [official website](http://elementsofprogramminginterviews.com).
+My Python solutions for the problems in this book.  It's really nice how the problems are also a tour of a variety of topics in computing.  I make heavy use of the official solution's test code.  You can find them at the book's [official website](http://elementsofprogramminginterviews.com).
 
 #### Categories
 1. Primitive Types
 2. Arrays
-    1. [(6.4) JumpGame.java](./JumpGame.java)
+    1. [(6.4) jump_game.py](./jump_game.py)
 3. Strings
 4. Linked Lists
 5. Stacks & Queues
