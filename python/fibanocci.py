@@ -7,12 +7,16 @@ def fib_recursive(n):
 
 
 def simple_test():
-    assert(fib_recursive(0) == 0)
-    assert(fib_recursive(1) == 1)
-    assert(fib_recursive(2) == 1)
-    assert(fib_recursive(3) == 2)
-    assert(fib_recursive(4) == 3)
-    assert(fib_recursive(5) == 5)
+    stimulus = [
+        (0, 0),
+        (1, 1),
+        (2, 1),
+        (3, 2),
+        (4, 3),
+        (5, 5)
+    ]
+    for stm, exp in stimulus:
+        assert(fib_recursive(stm) == exp)
 
 if __name__ == '__main__':
     simple_test()
