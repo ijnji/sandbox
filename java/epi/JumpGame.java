@@ -26,11 +26,11 @@ public class JumpGame {
   }
 
   private static void smallTest() {
-    expect(canReachEnd(Arrays.asList(2, 3, 1, 1, 4)), true);
-    expect(canReachEnd(Arrays.asList(3, 2, 1, 0, 4)), false);
-    expect(canReachEnd(Arrays.asList(3, 2, 1, -10, 4)), false);
-    expect(canReachEnd(Arrays.asList(2, 3, -1, -1, 4)), true);
-    expect(canReachEnd(Arrays.asList(2, 2, -1, -1, 100)), false);
+    expect(canReachEnd(Arrays.asList(2, 3, 1, 1, 4))).toBe(true);
+    expect(canReachEnd(Arrays.asList(3, 2, 1, 0, 4))).toBe(false);
+    expect(canReachEnd(Arrays.asList(3, 2, 1, -10, 4))).toBe(false);
+    expect(canReachEnd(Arrays.asList(2, 3, -1, -1, 4))).toBe(true);
+    expect(canReachEnd(Arrays.asList(2, 2, -1, -1, 100))).toBe(false);
   }
 
   public static void main(String[] args) {
