@@ -3,8 +3,6 @@
 // Given an array of integers A, where A[i] denotes max possible moves starting from i.
 // Return if it's possible to move to last index of A starting from i = 0.
 
-package epi;
-
 import java.lang.Math;
 import java.util.ArrayList;
 import java.util.Arrays;

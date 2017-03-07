@@ -9,6 +9,10 @@ public class BinaryTreeNode<T> {
   public BinaryTreeNode(T aData) {
     this.data = aData;
   }
+
+  public String toString() {
+    return this.data.toString();
+  }
   
 }
 
