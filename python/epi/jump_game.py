@@ -2,8 +2,10 @@
 #
 # Description:
 #
-# Given an array of integers A, where A[i] denotes max possible moves starting from i.
-# Return if it's possible to move to last index of A starting from i = 0.
+# Given an array of integers A, where A[i] denotes max possible moves
+# starting from i, return whether or not it's possible to move from
+# i = 0 to the last index, i = |A| - 1.
+
 
 from rlib.testing import expect
 
