@@ -17,6 +17,7 @@ My Java solutions for the problems in this book.  It's really nice how the probl
 11. Binary Search Trees
 12. Recursion
 13. Dynamic Programming
+    1. [(17.1) ScoreCombination.java](./ScoreCombination.java)
 14. Greedy & Invariants
 15. Graphs
 26. Parallel Computing
