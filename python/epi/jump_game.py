@@ -6,7 +6,6 @@
 # starting from i, return whether or not it's possible to move from
 # i = 0 to the last index, i = |A| - 1.
 
-
 from rlib.testing import expect
 
 def can_reach_end(max_advance_steps):
@@ -19,11 +18,11 @@ def can_reach_end(max_advance_steps):
     return false
 
 def small_test():
-    expect(can_reach_end([2, 3, 1, 1, 4]), True)
-    expect(can_reach_end([3, 2, 1, 0, 4]), False)
-    expect(can_reach_end([3, 2, 1, -10, 4]), False)
-    expect(can_reach_end([2, 3, -1, -1, 4]), True)
-    expect(can_reach_end([2, 2, -1, -1, 100]), False)
+    expect(can_reach_end([2, 3, 1, 1, 4])).to_be(True)
+    expect(can_reach_end([3, 2, 1, 0, 4])).to_be(False)
+    expect(can_reach_end([3, 2, 1, -10, 4]).to_be(False)
+    expect(can_reach_end([2, 3, -1, -1, 4])).to_be(True)
+    expect(can_reach_end([2, 2, -1, -1, 100])).to_be(False)
 
 if __name__ == '__main__':
     small_test()

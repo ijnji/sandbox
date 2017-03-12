@@ -20,7 +20,6 @@ public class ScoreCombination {
     List<List<Integer>> memo = new ArrayList<>();
     for (int i = 0; i < playScores.size(); i++) {
       List<Integer> row = new ArrayList<Integer>();
-      memo.add(row);
       for (int j = 0; j <= totalScore; j++) {
         int c = 0;
         if (i == 0) {
@@ -33,6 +32,7 @@ public class ScoreCombination {
         }
         row.add(c);
       }
+      memo.add(row);
     }
     return memo.get(playScores.size() - 1).get(totalScore);
   }
