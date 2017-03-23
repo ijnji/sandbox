@@ -1,6 +1,6 @@
 package rlib;
 
-public class Testing {
+public class TestingUtils {
 
   public static class Expectation {
 

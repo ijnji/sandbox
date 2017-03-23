@@ -10,7 +10,7 @@ import java.lang.Math;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-import static rlib.Testing.expect;
+import static rlib.TestingUtils.expect;
 
 public class JumpGame {
 
