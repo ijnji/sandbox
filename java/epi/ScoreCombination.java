@@ -37,7 +37,7 @@ public class ScoreCombination {
     return memo.get(playScores.size() - 1).get(totalScore);
   }
 
-  public static void smallTest() {
+  private static void smallTest() {
     List<Integer> playScores;
     playScores = Arrays.asList(2);
     expect(combinations(1, playScores)).toBe(0);

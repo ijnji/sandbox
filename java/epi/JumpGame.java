@@ -14,7 +14,7 @@ import static rlib.TestingUtils.expect;
 
 public class JumpGame {
 
-  private static boolean canReachEnd(List<Integer> maxAdvanceSteps) {
+  public static boolean canReachEnd(List<Integer> maxAdvanceSteps) {
     int end = maxAdvanceSteps.size() - 1;
     int far = 0;
     for (int i = 0; i < maxAdvanceSteps.size(); i++) {
