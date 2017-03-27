@@ -7,6 +7,7 @@ My Java solutions for the problems in this book.  It's really nice how the probl
 2. Arrays
     1. [(6.4) JumpGame.java](./JumpGame.java)
 3. Strings
+    1. [(7.1) InterconvertingStringInteger.java](./InterconvertingStringInteger.java)
 4. Linked Lists
 5. Stacks & Queues
 6. Binary Trees
