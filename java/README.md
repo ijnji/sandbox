@@ -25,3 +25,11 @@ String sfl = Float.toString(-1.23);
 * `Double.compare(x, 1.23) == 0)` over `x == 1.23`
 * `Math.*`: `abs(-34.5)`, `ceil(2.17)`, `floor(3.14)`, `min(x, -4)`, `max(3.14, y)`, `pow(2.71, 3.14)`, `sqrt(225)`
 * `Random.*`: `nextInt(16)`, `nextBoolean()`, `nextDouble()`
+
+### Arrays
+```java
+int one[] = new int[]{1, 2, 3};
+int two[][] = new int[3][];
+int len = two.length;
+```
+* `Arrays.*`:`binarySearch(A, 5)`, `copyOf(A)`, `copyOfRange(A, 1, 5)`, `equals(A, B)`, `fill(A, 42)`, `find(A, 28)`, `sort(A)`, `sort(A, cmp)`, `toString()`
