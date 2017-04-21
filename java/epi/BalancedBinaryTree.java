@@ -16,8 +16,6 @@ public class BalancedBinaryTree {
     if (root == null) return true;
     int maxh = Math.max(maxHeight(root.left, 1), maxHeight(root.right, 1));
     int minh = Math.min(minHeight(root.left, 1), minHeight(root.right, 1));
-    System.out.print(minh + " " + maxh);
-    System.out.println();
     if (Math.abs(maxh - minh) > 1) return false;
     else return true;
   }
@@ -30,13 +28,6 @@ public class BalancedBinaryTree {
   private static int minHeight(BinaryTreeNode<Integer> root, int height) {
     if (root == null) return height - 1;
     return Math.min(minHeight(root.left, height + 1), minHeight(root.right, height + 1));
-  }
-
-  private static void inorder(BinaryTreeNode<Integer> root) {
-    if (root == null) return;
-    inorder(root.left);
-    System.out.print(root.data + " ");
-    inorder(root.right);
   }
 
   private static void smallTest() {
