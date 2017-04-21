@@ -2,6 +2,7 @@ package rlib;
 
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Stack;
 import java.util.Queue;
 
 public class TreeUtils {
@@ -22,7 +23,24 @@ public class TreeUtils {
         n = que.remove();
       }
     }
+    trimTree(root);
     return root;
+  }
+
+  private static <T> void trimTree(BinaryTreeNode<T> root) {
+    Stack<BinaryTreeNode<T>> stk = new Stack<>();
+    stk.push(root);
+    while (stk.size() > 0) {
+      BinaryTreeNode<T> n = stk.pop();
+      if (n.left != null) {
+        if (n.left.data == null) n.left = null;
+        else stk.push(n.left);
+      }
+      if (n.right != null) {
+        if (n.right.data == null) n.right = null;
+        else stk.push(n.right);
+      }
+    }
   }
 
 }

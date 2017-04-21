@@ -28,7 +28,7 @@ public class InterconvertingStringInteger {
     return sb.reverse().toString();
   }
 
-  public static int stringToInt(String s) {
+  private static int stringToInt(String s) {
     boolean isNeg = (s.charAt(0) == '-') ? true : false;
     int res = 0;
     for (int i = (isNeg) ? 1 : 0; i < s.length(); i++) {
