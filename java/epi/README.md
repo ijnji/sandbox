@@ -11,6 +11,8 @@ My Java solutions for the problems in this book.  It's really nice how the probl
 4. Linked Lists
 5. Stacks & Queues
 6. Binary Trees
+    1. [(10.1) BalancedBinaryTree.java](./BalancedBinaryTree.java)
+    2. [(10.2) SymmetricBinaryTree.java](./SymmetricBinaryTree.java)
 7. Heaps
 8. Searching
 9. Hash Tables
