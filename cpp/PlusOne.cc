@@ -24,10 +24,6 @@ void show(vector<int> A) {
 }
 
 void smallTest() {
-  // vector<vector<int>> stims;
-  // stims.push_back({9, 9});
-  // stims.push_back({0});
-  // stims.push_back({1, 2, 3});
   vector<vector<int>> stims = {
     {9, 9},
     {0},
