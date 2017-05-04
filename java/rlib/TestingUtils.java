@@ -11,16 +11,28 @@ public class TestingUtils {
     }
 
     public void toBe(Object reference) {
+      if (reference != null && this.result == null) {
+        System.out.printf("Expected null to be \"%s\".\n",
+          reference.toString());
+        return;
+      }
       if (!this.result.equals(reference)) {
         System.out.printf("Expected \"%s\" to be \"%s\".\n",
           this.result.toString(), reference.toString());
+        return;
       }
     }
 
     public void toNotBe(Object reference) {
-      if (this.result.equals(reference)) {
+      if (reference != null && this.result == null) {
+        System.out.printf("Expected null to be \"%s\".\n",
+          reference.toString());
+        return;
+      }
+      if (!this.result.equals(reference)) {
         System.out.printf("Expected \"%s\" to not be \"%s\".\n",
           this.result.toString(), reference.toString());
+        return;
       }
     }
 
