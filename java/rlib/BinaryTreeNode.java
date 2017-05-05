@@ -3,7 +3,7 @@ package rlib;
 public class BinaryTreeNode<T> {
 
   public T data;
-  public BinaryTreeNode<T> left, right;
+  public BinaryTreeNode<T> left, right, parent;
 
   public BinaryTreeNode() {}
 
@@ -11,10 +11,26 @@ public class BinaryTreeNode<T> {
     this.data = data;
   }
 
-  public BinaryTreeNode(T data, BinaryTreeNode<T> left, BinaryTreeNode<T> right) {
+  public BinaryTreeNode(
+    T data,
+    BinaryTreeNode<T> left,
+    BinaryTreeNode<T> right)
+  {
     this.data = data;
     this.left = left;
     this.right = right;
+  }
+
+  public BinaryTreeNode(
+    T data,
+    BinaryTreeNode<T> left,
+    BinaryTreeNode<T> right,
+    BinaryTreeNode<T> parent)
+  {
+    this.data = data;
+    this.left = left;
+    this.right = right;
+    this.parent = parent;
   }
 
 }

@@ -27,6 +27,12 @@ public class TreeUtils {
     return root;
   }
 
+  public static <T> BinaryTreeNode<T> buildTreeWithParent(List<T> datas) {
+    if (datas == null || datas.size() == 0) return null;
+    BinaryTreeNode<T> root = buildTree(datas);
+    return buildParents(root);
+  }
+
   private static <T> void trimTree(BinaryTreeNode<T> root) {
     Stack<BinaryTreeNode<T>> stk = new Stack<>();
     stk.push(root);
@@ -39,6 +45,22 @@ public class TreeUtils {
       if (n.right != null) {
         if (n.right.data == null) n.right = null;
         else stk.push(n.right);
+      }
+    }
+  }
+
+  private static <T> void buildParents(BinaryTreeNode<T> root) {
+    Stack<BinaryTreeNode<T>> stk = new Stack<>();
+    stk.push(root);
+    while (stk.size() > 0) {
+      BinaryTreeNode<T> n = stk.pop();
+      if (n.left != null) {
+        n.left.parent = n;
+        stk.push(n.left);
+      }
+      if (n.right != null) {
+        n.right.parent = n;
+        stk.push(n.right);
       }
     }
   }
