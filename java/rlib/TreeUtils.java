@@ -30,7 +30,8 @@ public class TreeUtils {
   public static <T> BinaryTreeNode<T> buildTreeWithParent(List<T> datas) {
     if (datas == null || datas.size() == 0) return null;
     BinaryTreeNode<T> root = buildTree(datas);
-    return buildParents(root);
+    buildParents(root);
+    return root;
   }
 
   private static <T> void trimTree(BinaryTreeNode<T> root) {
