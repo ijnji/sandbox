@@ -13,11 +13,7 @@ import static rlib.TestingUtils.expect;
 
 public class SymmetricBinaryTree {
 
-  public static boolean isSymmetric(BinaryTreeNode<Integer> root) {
-    return (root == null) || checkSubtrees(root.left, root.right);
-  }
-
-  public static boolean checkSubtrees(BinaryTreeNode<Integer> left, BinaryTreeNode<Integer> right) {
+  private static boolean checkSubtrees(BinaryTreeNode<Integer> left, BinaryTreeNode<Integer> right) {
     if (left == null && right == null) {
       return true;
     } else if (left != null && right != null) {
@@ -27,6 +23,10 @@ public class SymmetricBinaryTree {
     } else {
       return false;
     }
+  }
+
+  public static boolean isSymmetric(BinaryTreeNode<Integer> root) {
+    return (root == null) || checkSubtrees(root.left, root.right);
   }
 
   private static void smallTest() {
