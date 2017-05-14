@@ -1,8 +1,7 @@
 // Description:
 //
-// Given a binary tree where each node represents a single bit of a binary
-// number (MSB at root, LSB at leaf), find the sum of all binary numbers in the
-// tree.
+// Given a set of sorted lists of transactions as tuples with the following:
+// {timestamp, id, payload
 
 package epi;
 
