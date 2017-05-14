@@ -12,6 +12,15 @@ import static rlib.TestingUtils.expect;
 
 public class LowestCommonAncestorWithParent {
 
+  public static int findHeight(BinaryTreeNode<Integer> root) {
+    int h = -1;
+    while (root != null) {
+      h++;
+      root = root.parent;
+    }
+    return h;
+  }
+
   public static BinaryTreeNode<Integer> LowestCommonAncestorWithParent(
     BinaryTreeNode<Integer> na,
     BinaryTreeNode<Integer> nb)
@@ -32,15 +41,6 @@ public class LowestCommonAncestorWithParent {
       nb = nb.parent;
     }
     return na;
-  }
-
-  public static int findHeight(BinaryTreeNode<Integer> root) {
-    int h = -1;
-    while (root != null) {
-      h++;
-      root = root.parent;
-    }
-    return h;
   }
 
   private static void smallTest() {

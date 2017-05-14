@@ -1,41 +1,42 @@
 // Description:
 //
-// Given a set of sorted lists of transactions as tuples with the following:
-// {timestamp, id, payload
+// Given a set of sorted lists of integers and assuming none of the lists can
+// fit in memory at once, but one member from all lists can be, merge all lists
+// together into one sorted list.
 
 package epi;
 
+import java.util.ArrayList;
 import java.util.Arrays;
-import rlib.BinaryTreeNode;
-import rlib.TreeUtils;
+import java.util.List;
+import java.util.PriorityQueue;
+import java.util.Queue;
 import static rlib.TestingUtils.expect;
 
-public class SumRootToLeafBinaryTree {
+public class MergeSortedArrays {
 
-  private static int sumRecurse(BinaryTreeNode<Integer> root, int partial) {
-    if (root == null) return 0;
-    int p = (partial << 1) + root.data;
-    if (root.left == null && root.right == null) return p;
-    else return sumRecurse(root.left, p) + sumRecurse(root.right, p);
+  private static class Tuple {
+    public int value;
+    public int id;
+    public Tuple(int value, int id) {
+      this.value = value;
+      this.id = id;
+    }
   }
 
-  public static int SumRootToLeafBinaryTree(BinaryTreeNode<Integer> root) {
-    return sumRecurse(root, 0);
+  public static List<Integer> mergeSortedLists(List<List<Integer>> lists) {
+
   }
 
   private static void smallTest() {
-    BinaryTreeNode<Integer> root;
-    root = TreeUtils.buildTree(Arrays.asList(1));
-    expect(SumRootToLeafBinaryTree(root)).toBe(1);
-    root = TreeUtils.buildTree(Arrays.asList(1, 0, 1));
-    expect(SumRootToLeafBinaryTree(root)).toBe(5);
-    root = TreeUtils.buildTree(Arrays.asList(
-        1, 
-        0, 1,
-        0, 1, 0, 0,
-        0, 1, null, null, null, 0, null, 0
+    List<List<Integer>> lists;
+    lists = new ArrayList<>();
+    lists.add(Arrays.asList(3, 5, 7));
+    lists.add(Arrays.asList(0, 6));
+    lists.add(Arrays.asList(0, 6, 28));
+    expect(mergeSortedLists(lists)).toBe(Arrays.asList(
+      0, 0, 3, 5, 6, 6, 7, 28
     ));
-    expect(SumRootToLeafBinaryTree(root)).toBe(46);
   }
 
   public static void main(String[] args) {
