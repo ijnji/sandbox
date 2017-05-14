@@ -15,6 +15,7 @@ My Java solutions for the problems in this book.  It's really nice how the probl
     2. [(10.2) SymmetricBinaryTree.java](./SymmetricBinaryTree.java)
     3. [(10.3) LowestCommonAncestor.java](./LowestCommonAncestor.java)
     4. [(10.4) LowestCommonAncestorWithParent.java](./LowestCommonAncestorWithParent.java)
+    5. [(10.5) SumRootToLeafBinaryTree.java](./SumRootToLeafBinaryTree.java)
 7. Heaps
 8. Searching
 9. Hash Tables
