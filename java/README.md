@@ -22,7 +22,7 @@ boolean bl = Boolean.valueOf(true);
 int it = Integer.parseInt("42");
 String sfl = Float.toString(-1.23);
 ```
-* `Double.compare(x, 1.23) == 0` over `x == 1.23`
+* `Double.compare(dl, 1.23) == 0` or `dl.compareTo(1.23) == 0` over `x == 1.23`
 * `Math.*`: `abs(-34.5)`, `ceil(2.17)`, `floor(3.14)`, `min(x, -4)`, `max(3.14, y)`, `pow(2.71, 3.14)`, `sqrt(225)`
 * `Random.*`: `nextInt(16)`, `nextBoolean()`, `nextDouble()`
 
