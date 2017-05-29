@@ -22,7 +22,7 @@ boolean bl = Boolean.valueOf(true);
 int it = Integer.parseInt("42");
 String sfl = Float.toString(-1.23);
 ```
-* `Double.compare(x, 1.23) == 0)` over `x == 1.23`
+* `Double.compare(x, 1.23) == 0` over `x == 1.23`
 * `Math.*`: `abs(-34.5)`, `ceil(2.17)`, `floor(3.14)`, `min(x, -4)`, `max(3.14, y)`, `pow(2.71, 3.14)`, `sqrt(225)`
 * `Random.*`: `nextInt(16)`, `nextBoolean()`, `nextDouble()`
 
@@ -32,9 +32,20 @@ int one[] = new int[]{1, 2, 3};
 int two[][] = new int[3][];
 int len = two.length;
 ```
-* `Arrays.*`:`binarySearch(A, 5)`, `copyOf(A)`, `copyOfRange(A, 1, 5)`, `equals(A, B)`, `fill(A, 42)`, `find(A, 28)`, `sort(A)`, `sort(A, cmp)`, `toString()`
+* `Arrays.*`: `binarySearch(A, 5)`, `copyOf(A)`, `copyOfRange(A, 1, 5)`, `equals(A, B)`, `fill(A, 42)`, `find(A, 28)`, `sort(A)`, `sort(A, cmp)`, `toString()`
 
 ### Strings
+```java
+StringBuilder sb = new StringBuilder();
+sb.append("a");
+char c = sb.charAt(1);
+sb.delete(startInclusive, endExclusive);
+sb.deleteCharAt(1);
+sb.insert(offset, "bc"); // also with most primitives and objects
+sb.reverse();
+sb.replace(startInclusive, endExclusive, "hello");
+sb.toString();
+```
 ```java
 String s = "orange";
 char c = s.charAt(1);
@@ -54,6 +65,15 @@ String[] spl1 = "the rabbit goes over the hill".split("\\s");
 String[] spl2 = "the rabbit goes over the hill".split("\\s", limit);
 boolean b4 = s.startsWith("or");
 boolean b5 = s.startsWith("or", offset);
-String ss1 = s.substring(startInclusive);dfdfdfdf
-String ss1 = s.substring(startInclusive, endExclusive);
+String ss1 = s.substring(startInclusive);
+String ss2 = s.substring(startInclusive, endExclusive);
+char[] chs = s.toCharArray();
+String lr = s.toLowerCase();
+String ur = s.toUpperCase();
+String tm = s.trim();
 ```
+```java
+String s = "abc";
+int cp = s.codePointAt(1);
+```
+* `Character.*`:`codePointAt(input, startInclusive)`, `toChars(codePoint)`, `charCount(codePoint)`
