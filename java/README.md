@@ -33,3 +33,27 @@ int two[][] = new int[3][];
 int len = two.length;
 ```
 * `Arrays.*`:`binarySearch(A, 5)`, `copyOf(A)`, `copyOfRange(A, 1, 5)`, `equals(A, B)`, `fill(A, 42)`, `find(A, 28)`, `sort(A)`, `sort(A, cmp)`, `toString()`
+
+### Strings
+```java
+String s = "orange";
+char c = s.charAt(1);
+int i = s.compareTo("banana"); // 13 (lexicographically)
+String ct = s.concat("apple");
+boolean b1 = s.contains("ran");
+boolean b2 = s.endsWith("range");
+boolean b3 = s.equalsIgnoreCase("Orange");
+int i1 = s.indexOf("e"); // also with char
+int i2 = s.indexOf("r", offset); // also with char
+int i3 = s.lastIndexOf("o"); // also with char
+int l = s.length();
+String sp1 = s.replace("range", "ption"); // also with char
+String sp2 = s.replaceAll("[a-z]", "*");df
+String sp3 = s.replaceFirst("[a-z]");
+String[] spl1 = "the rabbit goes over the hill".split("\\s");
+String[] spl2 = "the rabbit goes over the hill".split("\\s", limit);
+boolean b4 = s.startsWith("or");
+boolean b5 = s.startsWith("or", offset);
+String ss1 = s.substring(startInclusive);dfdfdfdf
+String ss1 = s.substring(startInclusive, endExclusive);
+```
