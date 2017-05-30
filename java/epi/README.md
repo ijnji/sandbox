@@ -1,7 +1,5 @@
 ### Elements of Programming Interviews
 
-My Java solutions for the problems in this book.  It's really nice how the problems are also a tour of a variety of topics in computing.  I make heavy use of the official solution's test code.  You can find them at the book's [official website](http://elementsofprogramminginterviews.com).
-
 #### Categories
 1. Primitive Types
 2. Arrays
@@ -17,6 +15,8 @@ My Java solutions for the problems in this book.  It's really nice how the probl
     4. [(10.4) LowestCommonAncestorWithParent.java](./LowestCommonAncestorWithParent.java)
     5. [(10.5) SumRootToLeafBinaryTree.java](./SumRootToLeafBinaryTree.java)
 7. Heaps
+    1. [(11.1) MergeSortedArrays.java](./MergeSortedArrays.java)
+    2. [(11.2) SortKIncreasingDecreasingArray.java](./SortKIncreasingDecreasingArray.java)
 8. Searching
 9. Hash Tables
 10. Sorting
@@ -24,11 +24,9 @@ My Java solutions for the problems in this book.  It's really nice how the probl
 12. Recursion
 13. Dynamic Programming
     1. [(17.1) ScoreCombination.java](./ScoreCombination.java)
+    2. [(17.2) LevenshteinDistance.java](./LevenshteinDistance.java)
+    3. [(17.3) NumberWays.java](./NumberWays.java)
+    4. [(17.4) ComputingBinomialCoefficients.java](./ComputingBinomialCoefficients.java)
 14. Greedy & Invariants
 15. Graphs
-26. Parallel Computing
-27. Design Problems
-28. Language Specific
-29. OO Design
-30. Common Tools
-31. Honors Class
+16. Honors Class

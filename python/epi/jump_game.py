@@ -1,5 +1,3 @@
-#!/usr/bin/python
-#
 # Description:
 #
 # Given an array of integers A, where A[i] denotes max possible moves

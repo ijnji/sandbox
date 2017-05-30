@@ -1,7 +1,5 @@
 ### Elements of Programming Interviews
 
-My Python solutions for the problems in this book.  It's really nice how the problems are also a tour of a variety of topics in computing.  I make heavy use of the official solution's test code.  You can find them at the book's [official website](http://elementsofprogramminginterviews.com).
-
 #### Categories
 1. Primitive Types
 2. Arrays
@@ -20,9 +18,5 @@ My Python solutions for the problems in this book.  It's really nice how the pro
     1. [(17.1) score_combination.py](./score_combination.py)
 14. Greedy & Invariants
 15. Graphs
-26. Parallel Computing
-27. Design Problems
-28. Language Specific
-29. OO Design
-30. Common Tools
-31. Honors Class
+    1. [(19.1) search_maze.py](./search_maze.py)
+16. Honors Class

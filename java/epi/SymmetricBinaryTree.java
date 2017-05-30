@@ -6,7 +6,6 @@ package epi;
 
 import java.lang.Math;
 import java.util.Arrays;
-import java.util.Stack;
 import rlib.BinaryTreeNode;
 import rlib.TreeUtils;
 import static rlib.TestingUtils.expect;
