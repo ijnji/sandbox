@@ -1,3 +1,5 @@
+#!/usr/bin/python
+#
 # Description:
 #
 # Given a 2D maze where each coordinate is either open space (white), or closed
@@ -5,7 +7,7 @@
 # coordinate, if possible.
 
 import collections
-from rlib.testing import expect
+from rlib.testing_utils import expect
 
 WHITE, BLACK = xrange(2)
 C = collections.namedtuple('C', ('x', 'y'))

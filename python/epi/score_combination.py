@@ -1,10 +1,12 @@
+#!/usr/bin/python
+#
 # Description:
 #
 # Given a list of plays, their individual worth in score points, and
 # a total score, return the number of all combinations of plays that
 # sum up to the given total score.
 
-from rlib.testing import expect
+from rlib.testing_utils import expect
 
 def combinations(total_score, play_scores):
     memo = []
