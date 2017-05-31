@@ -16,6 +16,7 @@
 12. Recursion
 13. Dynamic Programming
     1. [(17.1) score_combination.py](./score_combination.py)
+    2. [(17.2) levenshtein_distance.py](./levenshtein_distance.py)
 14. Greedy & Invariants
 15. Graphs
     1. [(19.1) search_maze.py](./search_maze.py)
