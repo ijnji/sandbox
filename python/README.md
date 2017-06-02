@@ -22,7 +22,7 @@ float('3.14') == 3.14
 * `sys.maxint` is also available.
 * Consider `math.isclose()` for float comparisons on very large values.
 * `x = x & x - 1` drops the lowest set bit of x.
-* `i = x ^ (x & (x - 1))` is the position of lowest set bit.
+* `i = x ^ (x & (x - 1))` index of the lowest set bit.
 
 ### Random
 ```python
@@ -43,4 +43,3 @@ random.choice(L) # returns random element
 bin(10) == '0b1010'
 int(0b1010) == 10
 ```
-* `bin(10) == '0b1010'`
