@@ -1,8 +1,10 @@
+#!/usr/bin/env python3
+#
 # Description:
 #
 # FILL_ME
 
-from rlib.testing import expect
+from rlib.testing_utils import expect
 
 def FILL_ME():
     pass

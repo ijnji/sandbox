@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 
 def fib_recursive(n):
     if n == 0: return 0

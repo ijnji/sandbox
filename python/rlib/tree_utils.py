@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 
 from collections import deque
 from rlib.binary_tree_node import BinaryTreeNode
