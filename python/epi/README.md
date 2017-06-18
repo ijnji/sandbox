@@ -10,7 +10,7 @@
 3. Strings
     * [(6.1) interconverting_string_integer](./interconverting_string_integer.py)
 4. Linked Lists
-    * [(7.1)]
+    * [(7.1) merge_sorted_lists](./merge_sorted_lists.py)
 5. Stacks & Queues
     * [(8.1)]
 6. Binary Trees
