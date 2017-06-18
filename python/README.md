@@ -45,8 +45,10 @@ int(0b1010) == 10
 list(range(100))
 len(A)
 A.append(42)
-A.remove(2)
+A.remove(2) # not index, instead element
 A.insert(3, 28)
+A.pop() # right end
+A.pop(i)
 a in A # O(n)
 B = A
 B = list(A) # new copy for primitives and shallow copy for objects

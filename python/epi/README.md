@@ -12,7 +12,7 @@
 4. Linked Lists
     * [(7.1) merge_sorted_lists](./merge_sorted_lists.py)
 5. Stacks & Queues
-    * [(8.1)]
+    * [(8.4) normalized_pathnames](./normalized_pathnames.py)
 6. Binary Trees
     * [(9.1)]
 7. Heaps
