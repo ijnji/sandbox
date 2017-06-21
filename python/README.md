@@ -1,5 +1,4 @@
-
-## Notes
+## Notes (Python 3.x)
 
 ```python
 x = x & x - 1 # drops the lowest set bit of x
@@ -46,7 +45,7 @@ list(range(100))
 len(A)
 A.append(42)
 A.remove(2) # not index, instead element
-A.insert(3, 28)
+A.insert(i, 28)
 A.pop() # right end
 A.pop(i)
 a in A # O(n)
@@ -84,7 +83,7 @@ s.strip()
 s.startswith(prefix)
 s.endswith(suffix)
 'apple,peach,pear'.split(',')
-','.join('Gauss', 'Prince of Mathematicians')
+','.join('Gauss', 'Prince of Mathematicians') # any iterable can be joined
 s.tolower()
 'Name name, Rank rank'.format(name='Archimedes', rank=3)
 'Hello my name is {0}'.format('Doug')
@@ -93,8 +92,15 @@ s.tolower()
 ### Random
 ```python
 random.randrange(30) # [0, max-1)
-random.randint(8, 16) # [min, max]
-random.random() # [0, 1.0)
+random.randint(min, max) # [min, max]
+random.random() # [0.0, 1.0)
 random.shuffle(L) # in-place
 random.choice(L) # returns random element
+```
+
+### Iterators
+```python
+it = iter([5, 6, 7, 8, 9])
+next(it) # 5
+for x in it: print(x) # 6, 7, 8, 9
 ```
