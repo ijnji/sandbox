@@ -5,7 +5,7 @@ x = x & x - 1 # drops the lowest set bit of x
 i = x ^ (x & (x - 1)) # index of the lowest set bit
 ```
 
-### Literals & Primitives
+### Literals and Primitives
 ```python
 4, 4.0, 5j, 0b10, 0xff
 True, False, None
@@ -59,7 +59,7 @@ s.endswith(suffix)
 'Hello my name is {0}'.format('Doug')
 ```
 
-### Parsing & Conversions
+### Parsing and Conversions
 ```python
 int('10')
 str(10)
@@ -152,7 +152,7 @@ heapq.nsmallest(1, hep) # [6]
 #   5. add new entry with new priority 
 ```
 
-### Dictionaries & Sets
+### Dictionaries and Sets
 ```python
 h = {}
 h = {1: 'abc', 3: 'xyz'}
