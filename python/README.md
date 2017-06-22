@@ -37,40 +37,6 @@ bin(10) == '0b1010'
 int(0b1010) == 10
 ```
 
-### Arrays
-```python
-[3, 5, 7, 11]
-[1] + [0] * 10
-list(range(100))
-len(A)
-A.append(42)
-A.remove(2) # not index, instead element
-A.insert(i, 28)
-A.pop() # right end
-A.pop(i)
-a in A # O(n)
-B = A
-B = list(A) # new copy for primitives and shallow copy for objects
-copy.copy(A) # shallow copy
-copy.deepcopy(A) # deep copy
-min(A)
-max(A)
-bisect.bisect(A, 6)
-bisect.bisect_left(A, 6)
-bisect.bisect_right(A, 6)
-A.reverse() # in-place
-reversed(A) # returns an iterator
-A.sort() # in-place
-sorted(A) # deep copy
-del A[i]
-A[inclusive_start:exclusive_end:step]
-A[:i]
-A[-1] # last element
-[x**2 for x in range(6)]
-[x**2 for x in range(6) if x % 2 == 0]
-[(x, y) for x in [1, 2, 3] for y in [7, 8, 9]] # (1, 7), (1, 8), (1, 9), etc
-```
-
 ### Strings
 ```python
 s = str(9)
@@ -87,6 +53,60 @@ s.endswith(suffix)
 s.tolower()
 'Name name, Rank rank'.format(name='Archimedes', rank=3)
 'Hello my name is {0}'.format('Doug')
+```
+
+### Arrays
+```python
+[3, 5, 7, 11]
+[1] + [0] * 10
+list(range(100))
+len(A)
+min(A)
+max(A)
+A[inclusive_start:exclusive_end:step]
+A[-1] # last element
+a in A # O(n)
+```
+```python
+A.append(42)
+A.remove(2) # not index, instead element
+A.insert(i, 28) # O(n)
+A.pop() # O(1), into end
+A.pop(i) # O(n)
+del A[i]
+```
+```python
+sorted(A) # new primitives, shallow objects
+reversed(A) # returns an iterator
+A.sort() # in-place
+A.reverse() # in-place
+bisect.bisect(A, 6)
+bisect.bisect_left(A, 6)
+bisect.bisect_right(A, 6)
+```
+```python
+B = A # assign reference
+B = list(A) # new primitives, shallow objects
+copy.copy(A) # shallow copy
+copy.deepcopy(A) # deep copy
+```
+```python
+[x**2 for x in range(6)]
+[x**2 for x in range(6) if x % 2 == 0]
+[(x, y) for x in [1, 2, 3] for y in [7, 8, 9]] # (1, 7), (1, 8), (1, 9), etc
+```
+
+### Stacks
+```python
+stk = []
+stk.append(1)
+stk.pop() # 1
+```
+
+### Queues
+```python
+from collections import deque
+
 ```
 
 ### Random
