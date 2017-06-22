@@ -132,10 +132,10 @@ heapq.nsmallest(1, hep) # [6]
 # mutiply key by -1 for max-heap
 # t[0] is key for tuples
 # supporting priority changes:
-#   1. entries are lists of [priority, count, task]
+#   1. entry = [priority, count, task]
 #   2. use a dict to locate entries
-#   3. use a counter to make entries unique
-#   4. mark old entry as removed
+#   3. use a counter in entry for 1:1 tracking of entry to task
+#   4. mark entry[-1] as 'REMOVED'
 #   5. add new entry with new priority 
 ```
 
