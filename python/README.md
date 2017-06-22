@@ -130,7 +130,7 @@ heapq.nsmallest(1, hep) # [6]
 ```
 ```python
 # mutiply key by -1 for max-heap
-# t[0] is key for tuples
+# keys in tuple and list are [0], [1], ... [-1]
 # supporting priority changes:
 #   1. entry = [priority, count, task]
 #   2. use a dict to locate entries
