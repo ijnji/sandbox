@@ -7,6 +7,9 @@ i = x ^ (x & (x - 1)) # index of the lowest set bit
 
 ### Primitives
 ```python
+4, 4.0, 5j, True, False, None, ('hello', 1), b'\xff'
+```
+```python
 abs(-34.5) == 34.5
 math.ceil(2.17) == 3.0
 math.floor(3.14) == 3.0
@@ -16,7 +19,6 @@ pow(2, 10) == 1024
 2 ** 10 == 1024
 math.sqrt(225) == 15.0
 ```
-
 ```python
 str(42) == '42'
 int('42') == 42
@@ -45,12 +47,14 @@ s[3] = 'l'
 s = 'abc' + 'def;'
 s[2:4] == 'cd'
 'abc' in s
+```
+```python
+s.tolower()
 s.strip()
 s.startswith(prefix)
 s.endswith(suffix)
 'apple,peach,pear'.split(',')
 ','.join('Gauss', 'Prince of Mathematicians') # any iterable can be joined
-s.tolower()
 'Name name, Rank rank'.format(name='Archimedes', rank=3)
 'Hello my name is {0}'.format('Doug')
 ```
@@ -60,29 +64,31 @@ s.tolower()
 [3, 5, 7, 11]
 [1] + [0] * 10
 list(range(100))
-len(A)
-min(A)
-max(A)
 A[inclusive_start:exclusive_end:step]
 A[-1] # last element
 a in A # O(n)
+len(A)
+min(A)
+max(A)
 ```
 ```python
 A.append(42)
-A.remove(2) # not index, instead element
+A.remove(value) # throws ValueError if not found
 A.insert(i, 28) # O(n)
-A.pop() # O(1), into end
+A.pop() # O(1), from end
 A.pop(i) # O(n)
 del A[i]
 ```
 ```python
-sorted(A) # new primitives, shallow objects
+sorted(A, key=lambda o: o.name, reverse=False) # new primitives, shallow objects
 reversed(A) # returns an iterator
 A.sort() # in-place
 A.reverse() # in-place
-bisect.bisect(A, 6)
-bisect.bisect_left(A, 6)
-bisect.bisect_right(A, 6)
+grades = [50, 60, 70, 80, 90]
+bisect.bisect_left(grades, 60) # 1
+bisect.bisect_right(grades, 60) # 2, same as bisect()
+bisect.insort_left(grades, 60) # inserts into 1
+bisect.insort_right(grades, 60) # inserts into 2, same as insort()
 ```
 ```python
 B = A # assign reference
@@ -99,14 +105,38 @@ copy.deepcopy(A) # deep copy
 ### Stacks
 ```python
 stk = []
-stk.append(1)
-stk.pop() # 1
+que.append(6); que.append(5); que.append(4)
+stk.pop() # 4, O(1)
 ```
 
 ### Queues
 ```python
-from collections import deque
+import collections
+que = collections.deque()
+que.append(6); que.append(5); que.append(4)
+que.popleft() # 6, O(1)
+que.pop() # 4, O(1)
+```
 
+### Heaps
+```python
+import heapq
+hep = []
+heapq.heappush(hep, 6); heapq.heappush(hep, 5); heapq.heappush(hep, 4)
+heapq.heappop(hep) # 4
+heapq.heappushpop(hep, 7) # 5
+heapq.nlargest(2, hep) # [7, 6]
+heapq.nsmallest(1, hep) # [6]
+```
+```python
+# mutiply key by -1 for max-heap
+# t[0] is key for tuples
+# supporting priority changes:
+#   1. entries are tuples of (priority, count, task)
+#   2. use a dict to locate entries
+#   3. use a counter to make entries unique
+#   4. mark old entry as removed
+#   5. add new entry with new priority 
 ```
 
 ### Random
@@ -114,8 +144,8 @@ from collections import deque
 random.randrange(30) # [0, max-1)
 random.randint(min, max) # [min, max]
 random.random() # [0.0, 1.0)
-random.shuffle(L) # in-place
-random.choice(L) # returns random element
+random.shuffle(A) # in-place
+random.choice(A) # returns random element
 ```
 
 ### Iterators
