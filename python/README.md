@@ -134,8 +134,8 @@ heapq.nsmallest(1, hep) # [6]
 # supporting priority changes:
 #   1. entry = [priority, count, task]
 #   2. use a dict to locate entries
-#   3. use a counter in entry for 1:1 tracking of entry to task
-#   4. mark entry[-1] as 'REMOVED'
+#   3. use an incrementing counter to track insertion order
+#   4. mark old entry[-1] as 'REMOVED'
 #   5. add new entry with new priority 
 ```
 
