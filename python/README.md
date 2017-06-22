@@ -5,9 +5,15 @@ x = x & x - 1 # drops the lowest set bit of x
 i = x ^ (x & (x - 1)) # index of the lowest set bit
 ```
 
-### Primitives
+### Literals & Primitives
 ```python
-4, 4.0, 5j, True, False, None, ('hello', 1), b'\xff'
+4, 4.0, 5j, 0b10, 0xff
+True, False, None
+('hello', 1)
+'\\asdf' # '\asdf'
+r'\\asdf' # raw string, '\\asdf'
+'\x42' # 'B'
+'\u0394' # unicode, 'Δ'
 ```
 ```python
 abs(-34.5) == 34.5
@@ -20,12 +26,9 @@ pow(2, 10) == 1024
 math.sqrt(225) == 15.0
 ```
 ```python
-str(42) == '42'
-int('42') == 42
-float('3.14') == 3.14
 float('inf') # psuedo min/max, floats don't have infinite precision
 sys.maxint
-math.isclose() # float comparison
+math.isclose() # preferred float comparison
 ```
 
 ### Bitwise Operations
@@ -35,13 +38,10 @@ math.isclose() # float comparison
 8 >> 1 == 4
 ~0 == -1
 0b1010 ^ 0b0101 == 0b1111
-bin(10) == '0b1010'
-int(0b1010) == 10
 ```
 
-### Strings
+### String Operations
 ```python
-s = str(9)
 s = 'hello'
 s[3] = 'l'
 s = 'abc' + 'def;'
@@ -59,7 +59,18 @@ s.endswith(suffix)
 'Hello my name is {0}'.format('Doug')
 ```
 
-### Arrays
+### Parsing & Conversions
+```python
+int('10')
+str(10)
+```
+```python
+ord('a') # 97
+chr(97) # 'a'
+chr(1234) # 'Ӓ'
+```
+
+### Lists
 ```python
 [3, 5, 7, 11]
 [1] + [0] * 10
@@ -85,7 +96,9 @@ reversed(A) # returns an iterator
 A.sort() # in-place
 A.reverse() # in-place
 grades = [50, 60, 70, 80, 90]
-bisect.bisect_left(grades, 60) # 1
+```
+```python
+bisect.bisect_left(grades, 60) # 1, O(logn)
 bisect.bisect_right(grades, 60) # 2, same as bisect()
 bisect.insort_left(grades, 60) # inserts into 1
 bisect.insort_right(grades, 60) # inserts into 2, same as insort()
@@ -137,6 +150,25 @@ heapq.nsmallest(1, hep) # [6]
 #   3. use an incrementing counter to track insertion order
 #   4. mark old entry[-1] as 'REMOVED'
 #   5. add new entry with new priority 
+```
+
+### Dictionaries & Sets
+```python
+h = {}
+h = {1: 'abc', 3: 'xyz'}
+for k in h: ... # keys
+h.items() # key-value tuples
+h.values()
+del h[1]
+```
+```python
+s = set()
+s = {1, 2, 3}
+s.add(4)
+s.remove(4)
+s.update([4, 5])
+s - {2} # {1, 3, 4, 5}
+{4, 5} < s # subset
 ```
 
 ### Random
