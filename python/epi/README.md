@@ -14,7 +14,7 @@
 5. Stacks & Queues
     * [(8.4) normalized_pathnames](./normalized_pathnames.py)
 6. Binary Trees
-    * [(9.1)]
+    * [(9.1) balanced_binary_tree](./balanced_binary_tree.py)
 7. Heaps
     * [(10.1)]
 8. Searching
