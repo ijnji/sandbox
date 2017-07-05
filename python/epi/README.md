@@ -30,6 +30,8 @@
 13. Dynamic Programming
     * [(16.1) score_combination.py](./score_combination.py)
     * [(16.2) levenshtein_distance.py](./levenshtein_distance.py)
+    * [(16.3) number_ways.py](./number_ways.py)
+    * [(16.4) computing_binomial_coefficients.py](./computing_binomial_coefficients.py)
 14. Greedy & Invariants
     * [(17.4)]
 15. Graphs

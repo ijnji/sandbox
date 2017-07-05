@@ -2,17 +2,16 @@
 #
 # Description:
 #
-# Compute the binomial coefficient of x^k term of the (1 + x)^n expansion.
-# Remember that the coefficient equals n Cr k.
+# Compute the coefficient of the x^k term of the binomial expansion (1 + x)^n.
+# The value of the coefficient is also the value of n Cr k.
 
 from rlib.testing_utils import expect
 
-def compute_n_choose_k(n, k):
-
-    memo = [[0 for j in range(k + 1)] for i in range(n + 1)]
+def binomial_coefficient(n, k):
+    memo = [[0] * (i + 1) for i in range(n + 1)]
     for i in range(n + 1):
-        for j in range(k + 1):
-            if j in (0, n):
+        for j in range(i + 1):
+            if j in (0, i):
                 memo[i][j] = 1
             else:
                 without_j = memo[i - 1][j]
@@ -21,10 +20,11 @@ def compute_n_choose_k(n, k):
     return memo[n][k]
 
 def small_test():
-    expect(compute_n_choose_k(0, 0)).to_be(1)
-    expect(compute_n_choose_k(1, 1)).to_be(1)
-    expect(compute_n_choose_k(12, 0)).to_be(1)
-    expect(compute_n_choose_k(12, 5)).to_be(792)
+    expect(binomial_coefficient(1, 0)).to_be(1)
+    expect(binomial_coefficient(1, 1)).to_be(1)
+    expect(binomial_coefficient(5, 1)).to_be(5)
+    expect(binomial_coefficient(5, 3)).to_be(10)
+    expect(binomial_coefficient(10, 4)).to_be(210)
 
 if __name__ == '__main__':
     small_test()
