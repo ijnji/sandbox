@@ -32,6 +32,7 @@
     * [(16.2) levenshtein_distance.py](./levenshtein_distance.py)
     * [(16.3) number_ways.py](./number_ways.py)
     * [(16.4) computing_binomial_coefficients.py](./computing_binomial_coefficients.py)
+    * [(16.5) sequence_in_grid.py](./sequence_in_grid.py)
 14. Greedy & Invariants
     * [(17.4)]
 15. Graphs
