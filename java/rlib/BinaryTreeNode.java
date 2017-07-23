@@ -2,8 +2,10 @@ package rlib;
 
 public class BinaryTreeNode<T> {
 
-  public T data;
-  public BinaryTreeNode<T> left, right, parent;
+  public T data = null;
+  public BinaryTreeNode<T> left = null;
+  public BinaryTreeNode<T> right = null;
+  public BinaryTreeNode<T> parent = null;
 
   public BinaryTreeNode() {}
 
