@@ -27,8 +27,7 @@ public class MergeSortedLists {
       }
       curr = curr.next;
     }
-    if (headA != null) curr.next = headA;
-    if (headB != null) curr.next = headB;
+    curr.next = (headA == null) ? headB : headA;
     return dummy.next;
   }
 
@@ -44,7 +43,7 @@ public class MergeSortedLists {
     else return false;
   }
 
-  public static void smallTest() {
+  private static void smallTest() {
     LinkedListNode<Integer> headA, headB, result, expected;
 
     headA = ListUtils.buildSingleList(Arrays.asList(1, 2, 3, 4, 5));

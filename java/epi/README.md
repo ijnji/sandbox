@@ -8,6 +8,7 @@
     * [(7.1) InterconvertingStringInteger.java](./InterconvertingStringInteger.java)
 4. Linked Lists
     * [(8.1) MergeSortedLists.java](./MergeSortedLists.java)
+    * [(8.2) ReverseSublist.java](./ReverseSublist.java)
 5. Stacks & Queues
 6. Binary Trees
     * [(10.1) BalancedBinaryTree.java](./BalancedBinaryTree.java)
