@@ -11,6 +11,7 @@
     * [(8.1) MergeSortedLists.java](./MergeSortedLists.java)
     * [(8.2) ReverseSublist.java](./ReverseSublist.java)
     * [(8.3) CheckCycle.java](./CheckCycle.java)
+    * [(8.4) CheckOverlap.java](./CheckOverlap.java)
 5. Stacks & Queues
 6. Binary Trees
     * [(10.1) BalancedBinaryTree.java](./BalancedBinaryTree.java)

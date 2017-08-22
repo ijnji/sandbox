@@ -11,28 +11,30 @@ public class TestingUtils {
     }
 
     public void toBe(Object reference) {
-      if (reference != null && this.result == null) {
-        System.out.printf("Expected null to be \"%s\".\n",
-          reference.toString());
-        return;
-      }
-      if (!this.result.equals(reference)) {
-        System.out.printf("Expected \"%s\" to be \"%s\".\n",
-          this.result.toString(), reference.toString());
-        return;
+      if (reference == null) {
+        if (this.result == null) return;
+        else {
+          System.out.printf("Expected %s to be \"%s\".\n", this.result.toString(), "null");
+        }
+      } else {
+        if (reference.equals(this.result)) return;
+        else {
+          System.out.printf("Expected %s to be \"%s\".\n", "null", reference.toString());
+        }
       }
     }
 
     public void toNotBe(Object reference) {
-      if (reference != null && this.result == null) {
-        System.out.printf("Expected null to be \"%s\".\n",
-          reference.toString());
-        return;
-      }
-      if (!this.result.equals(reference)) {
-        System.out.printf("Expected \"%s\" to not be \"%s\".\n",
-          this.result.toString(), reference.toString());
-        return;
+      if (reference == null) {
+        if (this.result != null) return;
+        else {
+          System.out.printf("Expected %s to not be \"%s\".\n", this.result.toString(), "null");
+        }
+      } else {
+        if (!reference.equals(this.result)) return;
+        else {
+          System.out.printf("Expected %s to not be \"%s\".\n", "null", reference.toString());
+        }
       }
     }
 
