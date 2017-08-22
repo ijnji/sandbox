@@ -6,11 +6,12 @@
 2. Arrays
     * [(5.1) dutch_national_flag.py](./dutch_national_flag.py)
     * [(5.4) jump_game.py](./jump_game.py)
-    * [(5.6) buy_and_sell_stock](./buy_and_sell_stock.py)
+    * [(5.6) buy_and_sell_stock.py](./buy_and_sell_stock.py)
 3. Strings
     * [(6.1) interconverting_string_integer](./interconverting_string_integer.py)
 4. Linked Lists
     * [(7.1) merge_sorted_lists](./merge_sorted_lists.py)
+    * [(7.2) reverse_sublist.py](./reverse_sublist.py)
 5. Stacks & Queues
     * [(8.4) normalized_pathnames](./normalized_pathnames.py)
 6. Binary Trees

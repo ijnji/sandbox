@@ -4,11 +4,11 @@
 #
 # Merge two sorted lists.
 
-from rlib.list_node import ListNode
+from rlib.linked_list_node import LinkedListNode
 from rlib.testing_utils import expect
 
 def merge_sorted_lists(L1, L2):
-    dummy = tail = ListNode()
+    dummy = tail = LinkedListNode()
     while L1 and L2:
         if L1.data < L2.data:
             tail.next = L1
@@ -25,17 +25,17 @@ def small_test():
     L1, L2 = None, None
     L = merge_sorted_lists(L1, L2)
     expect(L).to_be(None)
-    L1 = ListNode(123)
+    L1 = LinkedListNode(123)
     L = merge_sorted_lists(L1, L2)
     expect(L.data).to_be(123)
     expect(L.next).to_be(None)
-    L2 = ListNode(123)
+    L2 = LinkedListNode(123)
     L1 = None
     L = merge_sorted_lists(L1, L2)
     expect(L.data).to_be(123)
     expect(L.next).to_be(None)
-    L1 = ListNode(-123)
-    L2 = ListNode(123)
+    L1 = LinkedListNode(-123)
+    L2 = LinkedListNode(123)
     L = merge_sorted_lists(L1, L2)
     expect(L.data).to_be(-123)
     expect(L.next.data).to_be(123)
