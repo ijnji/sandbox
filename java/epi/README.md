@@ -2,6 +2,7 @@
 
 #### Categories
 1. Primitive Types
+    * [(5.11) RectangularIntersection.java](./RectangularIntersection.java)
 2. Arrays
     * [(6.4) JumpGame.java](./JumpGame.java)
 3. Strings
@@ -9,6 +10,7 @@
 4. Linked Lists
     * [(8.1) MergeSortedLists.java](./MergeSortedLists.java)
     * [(8.2) ReverseSublist.java](./ReverseSublist.java)
+    * [(8.3) CheckCycle.java](./CheckCycle.java)
 5. Stacks & Queues
 6. Binary Trees
     * [(10.1) BalancedBinaryTree.java](./BalancedBinaryTree.java)
