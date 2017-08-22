@@ -12,7 +12,7 @@ public class RectangularIntersection {
 
   public static class Rectangle {
 
-    public static int x, y, width, height;
+    public int x, y, width, height;
 
     public Rectangle(int x, int y, int width, int height) {
       this.x = x;
@@ -48,7 +48,7 @@ public class RectangularIntersection {
     A = new Rectangle(0, 0, 4, 4);
     B = new Rectangle(1, 1, 5, 5);
     result = intersects(A, B);
-    expected = new Rectangle(1, 1, 4, 4);
+    expected = new Rectangle(1, 1, 3, 3);
     expect(check(result, expected)).toBe(true);
 
     A = new Rectangle(0, 0, 2, 2);
