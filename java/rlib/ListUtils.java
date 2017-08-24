@@ -1,6 +1,7 @@
 package rlib;
 
 import java.util.List;
+import rlib.Operatable;
 
 public class ListUtils {
 
@@ -25,9 +26,21 @@ public class ListUtils {
     return dummy.next;
   }
 
+  public static <T> boolean equivalence(
+    LinkedListNode<T> head1, LinkedListNode<T> head2)
+  {
+    while (head1 != null && head2 != null) {
+      if (head1.data != head2.data) return false;
+      head1 = head1.next;
+      head2 = head2.next;
+    }
+    if (head1 == null && head2 == null) return true;
+    else return false;
+  }
+
   public static <T> void draw(LinkedListNode<T> head) {
-    while (head != null) {
       System.out.print(head.data + " ");
+      while (head != null) {
       head = head.next;
     }
     System.out.println();
