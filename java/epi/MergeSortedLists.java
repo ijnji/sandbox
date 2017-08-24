@@ -11,7 +11,7 @@ import static rlib.TestingUtils.expect;
 
 public class MergeSortedLists {
 
-  private static LinkedListNode<Integer> mergeTwoLists(
+  public static LinkedListNode<Integer> mergeTwoLists(
     LinkedListNode<Integer> headA, LinkedListNode<Integer> headB)
   {
     LinkedListNode<Integer> dummy = new LinkedListNode<>();

@@ -12,7 +12,7 @@ import static rlib.TestingUtils.expect;
 
 public class CheckOverlap {
 
-  private static LinkedListNode<Integer> checkOverlap(
+  public static LinkedListNode<Integer> checkOverlap(
     LinkedListNode<Integer> headA, LinkedListNode<Integer> headB)
   {
     if (headA == null || headB == null) return null;

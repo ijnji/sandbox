@@ -11,7 +11,7 @@ import static rlib.TestingUtils.expect;
 
 public class CheckCycle {
 
-  private static boolean checkCycle(LinkedListNode<Integer> head) {
+  public static boolean checkCycle(LinkedListNode<Integer> head) {
     LinkedListNode<Integer> slow = head;
     LinkedListNode<Integer> fast = head;
     while (slow != null && fast.next != null) {

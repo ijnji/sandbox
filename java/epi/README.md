@@ -12,6 +12,7 @@
     * [(8.2) ReverseSublist.java](./ReverseSublist.java)
     * [(8.3) CheckCycle.java](./CheckCycle.java)
     * [(8.4) CheckOverlap.java](./CheckOverlap.java)
+    * [(8.6) RemoveFromSingle.java](./RemoveFromSingle.java)
 5. Stacks & Queues
 6. Binary Trees
     * [(10.1) BalancedBinaryTree.java](./BalancedBinaryTree.java)
