@@ -15,6 +15,7 @@
     * [(8.6) RemoveFromSingle.java](./RemoveFromSingle.java)
     * [(8.7) RemoveKthLast.java](./RemoveKthLast.java)
     * [(8.8) RemoveDuplicates.java](./RemoveDuplicates.java)
+    * [(8.9) CyclicRightShift.java](./CyclicRightShift.java)
 5. Stacks & Queues
 6. Binary Trees
     * [(10.1) BalancedBinaryTree.java](./BalancedBinaryTree.java)

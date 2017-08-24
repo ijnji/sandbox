@@ -39,8 +39,8 @@ public class ListUtils {
   }
 
   public static <T> void draw(LinkedListNode<T> head) {
+    while (head != null) {
       System.out.print(head.data + " ");
-      while (head != null) {
       head = head.next;
     }
     System.out.println();
