@@ -17,6 +17,7 @@
     * [(8.8) RemoveDuplicates.java](./RemoveDuplicates.java)
     * [(8.9) CyclicRightShift.java](./CyclicRightShift.java)
     * [(8.10) MergeEvenOdd.java](./MergeEvenOdd.java)
+    * [(8.11) CheckPalindrome.java](./CheckPalindrome.java)
 5. Stacks & Queues
 6. Binary Trees
     * [(10.1) BalancedBinaryTree.java](./BalancedBinaryTree.java)
