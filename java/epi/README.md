@@ -17,7 +17,7 @@
     * [(8.8) RemoveDuplicates.java](./RemoveDuplicates.java)
     * [(8.9) CyclicRightShift.java](./CyclicRightShift.java)
     * [(8.10) MergeEvenOdd.java](./MergeEvenOdd.java)
-    * [(8.11) CheckPalindrome.java](./CheckPalindrome.java)
+    * [(8.11) CheckListPalindrome.java](./CheckListPalindrome.java)
 5. Stacks & Queues
 6. Binary Trees
     * [(10.1) BalancedBinaryTree.java](./BalancedBinaryTree.java)
@@ -25,6 +25,7 @@
     * [(10.3) LowestCommonAncestor.java](./LowestCommonAncestor.java)
     * [(10.4) LowestCommonAncestorWithParent.java](./LowestCommonAncestorWithParent.java)
     * [(10.5) SumRootToLeafBinaryTree.java](./SumRootToLeafBinaryTree.java)
+    * [(10.12) TreeFromTraversals.java](./TreeFromTraversals.java)
 7. Heaps
     * [(11.1) MergeSortedArrays.java](./MergeSortedArrays.java)
     * [(11.2) SortKIncreasingDecreasingArray.java](./SortKIncreasingDecreasingArray.java)

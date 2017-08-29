@@ -2,14 +2,14 @@ package rlib;
 
 import java.util.LinkedList;
 import java.util.List;
-import java.util.Queue;
+import java.util.Deque;
 
 public class TreeUtils {
 
   public static <T> BinaryTreeNode<T> buildTree(List<T> datas) {
     if (datas == null || datas.size() == 0) return null;
     BinaryTreeNode<T> root = new BinaryTreeNode<>(datas.get(0));
-    Queue<BinaryTreeNode<T>> que = new LinkedList<>();
+    Deque<BinaryTreeNode<T>> que = new LinkedList<>();
     que.add(root);
     int i = 1;
     while (i < datas.size()) {
@@ -26,7 +26,7 @@ public class TreeUtils {
 
   private static <T> BinaryTreeNode<T> trimTree(BinaryTreeNode<T> root) {
     if (root == null || root.data == null) return null;
-    Queue<BinaryTreeNode<T>> que = new LinkedList<>();
+    Deque<BinaryTreeNode<T>> que = new LinkedList<>();
     que.add(root);
     while (que.size() > 0) {
       BinaryTreeNode<T> n = que.remove();
@@ -47,7 +47,7 @@ public class TreeUtils {
   }
 
   private static <T> BinaryTreeNode<T> linkParents(BinaryTreeNode<T> root) {
-    Queue<BinaryTreeNode<T>> que = new LinkedList<>();
+    Deque<BinaryTreeNode<T>> que = new LinkedList<>();
     que.add(root);
     while (que.size() > 0) {
       BinaryTreeNode<T> n = que.remove();
@@ -61,6 +61,14 @@ public class TreeUtils {
       }
     }
     return root;
+  }
+
+  public static <T> boolean equivalence(BinaryTreeNode<T> headA, BinaryTreeNode<T> headB) {
+    if (headA == null ^ headB == null) return false;
+    if (headA == null && headB == null) return true;
+    boolean lft = equivalence(headA.left, headB.left);
+    boolean rgt = equivalence(headA.right, headB.right);
+    return (lft && rgt && (headA.data == headB.data));
   }
 
 }
