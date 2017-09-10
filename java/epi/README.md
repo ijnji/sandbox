@@ -18,6 +18,7 @@
     * [(8.9) CyclicRightShift.java](./CyclicRightShift.java)
     * [(8.10) MergeEvenOdd.java](./MergeEvenOdd.java)
     * [(8.11) CheckListPalindrome.java](./CheckListPalindrome.java)
+    * [(8.12) PivotList.java](./PivotList.java)
 5. Stacks & Queues
 6. Binary Trees
     * [(10.1) BalancedBinaryTree.java](./BalancedBinaryTree.java)
