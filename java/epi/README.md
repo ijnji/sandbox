@@ -19,6 +19,7 @@
     * [(8.10) MergeEvenOdd.java](./MergeEvenOdd.java)
     * [(8.11) CheckListPalindrome.java](./CheckListPalindrome.java)
     * [(8.12) PivotList.java](./PivotList.java)
+    * [(8.13) ListIntegerSummation.java](./ListIntegerSummation.java)
 5. Stacks & Queues
 6. Binary Trees
     * [(10.1) BalancedBinaryTree.java](./BalancedBinaryTree.java)
