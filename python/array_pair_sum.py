@@ -10,8 +10,7 @@ from rlib.testing_utils import expect
 def array_pair_sum(values, k):
     s = set()
     res = set()
-    for v in values:
-        if v not in s: s.add(v)
+    for v in values: s.add(v)
     for v in s:
         diff = k - v
         if diff in s: res.add((min(v, diff), max(v, diff)))
