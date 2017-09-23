@@ -22,6 +22,7 @@ def make_read_4(blob):
     return read_4
 
 def read_n(read_4, buffer, n):
+    # Assume len(buffer) == n
     idx = 0
     cache = bytearray([0] * 4)
     cache_idx = 0
