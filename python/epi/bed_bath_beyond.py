@@ -6,10 +6,8 @@
 # returns a list of dictionary words that concatenates exactly to the pattern.
 
 from collections import deque
-from rlib.language_utils import buildEnglishSet
-from rlib.testing_utils import expect
 
-def bedbathbeyond(dictionary, pattern):
+def find_sequences(dictionary, pattern):
     # List of indices of the beginning of the last word in the decompositions of pattern[:i + 1]
     memo = [[] for i in range(len(pattern))]
     for i in range(len(pattern)):
@@ -33,18 +31,3 @@ def bedbathbeyond(dictionary, pattern):
                 copy_decomp.append(suffix)
                 que.append((start - 1, copy_decomp))
     return decompositions
-
-def small_test():
-    dictionary = buildEnglishSet()
-    expect(bedbathbeyond(dictionary, 'apple')).to_be([
-        ['apple'], ['app', 'le'], ['a', 'pp', 'le']
-    ])
-    expect(bedbathbeyond(dictionary, 'bedbath')).to_be([
-        ['bed', 'bath'], ['bed', 'ba', 'th'], ['be', 'db', 'a', 'th']
-    ])
-    expect(bedbathbeyond(dictionary, 'beyond')).to_be([
-        ['beyond'], ['be', 'yond'], ['be', 'yo', 'nd']
-    ])
-
-if __name__ == '__main__':
-    small_test()
