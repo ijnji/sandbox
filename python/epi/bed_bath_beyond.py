@@ -30,4 +30,5 @@ def find_sequences(dictionary, pattern):
                 copy_decomp = list(decomp)
                 copy_decomp.append(suffix)
                 que.append((start - 1, copy_decomp))
+    decompositions.sort()
     return decompositions

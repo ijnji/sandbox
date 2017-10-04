@@ -1,12 +1,18 @@
 #!/usr/bin/env python3
 
-import os
+import urllib.request
+
+URL = 'https://raw.githubusercontent.com/dwyl/english-words/master/words_alpha.txt'
 
 def buildEnglishSet():
-    location = os.path.join(os.getcwd(), os.path.dirname(__file__))
-    location = os.path.join(location, 'language_english_words.txt')
-    res = set()
-    with open(location) as f:
-        for word in f.readlines():
-            res.add(word.strip().lower())
-    return res
+    try:
+        res = set()
+        words = urllib.request.urlopen(URL).read().decode('utf-8').split('\n')
+        for word in words:
+            word = word.strip().lower()
+            if len(word) > 1: res.add(word)
+        res.add('a')
+        res.add('i')
+        return res
+    except:
+        return set()

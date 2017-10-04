@@ -8,11 +8,11 @@ from epi.bed_bath_beyond import find_sequences
 def test_small():
     dictionary = buildEnglishSet()
     assert(find_sequences(dictionary, 'apple') == [
-        ['apple'], ['app', 'le'], ['a', 'pp', 'le']
+        ['a', 'pp', 'le'], ['app', 'le'], ['apple']
     ])
     assert(find_sequences(dictionary, 'bedbath') == [
-        ['bed', 'bath'], ['bed', 'ba', 'th'], ['be', 'db', 'a', 'th']
+        ['be', 'db', 'a', 'th'], ['bed', 'ba', 'th'], ['bed', 'bath']
     ])
     assert(find_sequences(dictionary, 'beyond') == [
-        ['beyond'], ['be', 'yond'], ['be', 'yo', 'nd']
+        ['be', 'yo', 'nd'], ['be', 'yond'], ['beyond']
     ])
