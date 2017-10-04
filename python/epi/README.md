@@ -1,3 +1,7 @@
+```python
+$ pytest [*_test.py]
+```
+
 ### Elements of Programming Interviews
 
 #### Categories
