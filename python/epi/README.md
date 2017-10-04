@@ -1,6 +1,6 @@
 ### Usage
 ```python
-$ pytest [*_test.py]
+\$ pytest [*_test.py]
 ```
 
 ### Elements of Programming Interviews
@@ -20,17 +20,17 @@ $ pytest [*_test.py]
 6. Binary Trees (17)
     * [(9.1) balanced_binary_tree](./balanced_binary_tree.py)
 7. Heaps (7)
-    * [(10.1)]
+    * (10.1)
 8. Searching (10)
-    * [(11.1)]
+    * (11.1)
 9. Hash Tables (14)
-    * [(12.2)]
+    * (12.2)
 10. Sorting (12)
-    * [(13.1)]
+    * (13.1)
 11. Binary Search Trees (13)
-    * [(14.1)]
+    * (14.1)
 12. Recursion (11)
-    * [(15.1)]
+    * (15.1)
 13. Dynamic Programming (12)
     * [(16.1) score_combination.py](./score_combination.py)
     * [(16.2) levenshtein_distance.py](./levenshtein_distance.py)
@@ -41,6 +41,6 @@ $ pytest [*_test.py]
     * [(16.7) bed_bath_beyond.py](./bed_bath_beyond.py)
     * [(16.8) minimum_triangle_path.py](./minimum_triangle_path.py)
 14. Greedy & Invariants (8)
-    * [(17.4)]
+    * (17.4)
 15. Graphs (9)
     * [(18.1) search_maze.py](./search_maze.py)
