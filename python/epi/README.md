@@ -1,10 +1,9 @@
+### Usage
 ```python
 $ pytest [*_test.py]
 ```
 
 ### Elements of Programming Interviews
-
-#### Categories
 1. Primitive Types (11)
     * [(4.1) parity.py](./parity.py)
 2. Arrays (20)
