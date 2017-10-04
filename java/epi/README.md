@@ -20,6 +20,7 @@
     * [8.12: PivotList.java](./PivotList.java)
     * [8.13: ListIntegerSummation.java](./ListIntegerSummation.java)
 5. Stacks & Queues
+    * 9.1:
 6. Binary Trees
     * [10.1: BalancedBinaryTree.java](./BalancedBinaryTree.java)
     * [10.2: SymmetricBinaryTree.java](./SymmetricBinaryTree.java)
@@ -32,15 +33,21 @@
     * [11.1: MergeSortedArrays.java](./MergeSortedArrays.java)
     * [11.2: SortKIncreasingDecreasingArray.java](./SortKIncreasingDecreasingArray.java)
 8. Searching
+    * 12.1:
 9. Hash Tables
+    * 13.1:
 10. Sorting
+    * 14.1:
 11. Binary Search Trees
+    * 15.1:
 12. Recursion
+    * 16.1:
 13. Dynamic Programming
     * [17.1: ScoreCombination.java](./ScoreCombination.java)
     * [17.2: LevenshteinDistance.java](./LevenshteinDistance.java)
     * [17.3: NumberWays.java](./NumberWays.java)
     * [17.4: ComputingBinomialCoefficients.java](./ComputingBinomialCoefficients.java)
 14. Greedy & Invariants
+    * 18.1:
 15. Graphs
-16. Honors Class
+    * 19.1:
