@@ -1,6 +1,6 @@
 ### Usage
-```python
-$\$ pytest [*_test.py]
+```bash
+> pytest [*_test.py]
 ```
 
 ### Elements of Programming Interviews
