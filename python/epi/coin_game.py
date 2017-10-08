@@ -6,7 +6,7 @@
 # choosing and keep a coin from either end of the current list. Find the maximum
 # total revenue of the first player if both players play optimally.
 
-def find_revenue(coins):
+def find_revenue_recursive(coins):
     memo = [[-1] * len(coins) for i in range(len(coins))]
     def find_revenue_helper(a, b):
         if a > b: return 0
