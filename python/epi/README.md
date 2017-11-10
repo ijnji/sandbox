@@ -42,6 +42,7 @@
     * [16.7: bed_bath_beyond.py](./bed_bath_beyond.py)
     * [16.8: minimum_triangle_path.py](./minimum_triangle_path.py)
     * [16.9: coin_game.py](./coin_game.py)
+    * [16.10: stair_climb.py](./stair_climb.py)
 14. Greedy & Invariants (8)
     * 17.4:
 15. Graphs (9)
