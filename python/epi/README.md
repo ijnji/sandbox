@@ -1,6 +1,6 @@
 ### Usage
 ```bash
-> pytest [*_test.py]
+> pytest <name>_test.py
 ```
 
 ### Elements of Programming Interviews
