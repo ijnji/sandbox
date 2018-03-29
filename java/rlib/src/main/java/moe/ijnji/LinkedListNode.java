@@ -1,4 +1,4 @@
-package rlib;
+package moe.ijnji.rlib;
 
 public class LinkedListNode<T> {
 

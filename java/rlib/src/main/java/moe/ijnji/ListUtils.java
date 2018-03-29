@@ -1,7 +1,6 @@
-package rlib;
+package moe.ijnji.rlib;
 
 import java.util.List;
-import rlib.Operatable;
 
 public class ListUtils {
 

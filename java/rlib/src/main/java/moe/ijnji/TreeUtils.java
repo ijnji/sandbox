@@ -1,4 +1,4 @@
-package rlib;
+package moe.ijnji.rlib;
 
 import java.util.LinkedList;
 import java.util.List;
