@@ -1,7 +1,7 @@
 ### Elements of Programming Interviews
 
 1. Primitive Types
-    * 5.11: [Source](./src/main/java/moe/ijnji/epi/RectangularIntersection.java) [Test](./src/test/java/moe/ijnji/epi/RectangularIntersectionTest.java) RectangularIntersection.java
+    * 5.11: ([Source](./src/main/java/moe/ijnji/epi/RectangularIntersection.java)|[Test](./src/test/java/moe/ijnji/epi/RectangularIntersectionTest.java)) RectangularIntersection.java
 2. Arrays
     * 6.1:
 3. Strings
