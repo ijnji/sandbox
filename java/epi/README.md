@@ -1,7 +1,7 @@
 ### Elements of Programming Interviews
 
 1. Primitive Types
-    * 5.11: [RectangularIntersection.java](./src/main/java/moe/ijnji/epi/RectangularIntersection.java) ([Test](./src/test/java/moe/ijnji/epi/RectangularIntersectionTest.java))
+    * 5.11: [RectangularIntersection.java](./src/main/java/moe/ijnji/epi/RectangularIntersection.java), [RectangularIntersectionTest.java](./src/test/java/moe/ijnji/epi/RectangularIntersectionTest.java)
 2. Arrays
     * 6.1:
 3. Strings
@@ -23,7 +23,7 @@
 11. Binary Search Trees
     * 15.1:
 12. Recursion
-    * 16.1:
+    * 16.1: [TowerOfHanoi.java](./src/main/java/moe/ijnji/epi/TowerOfHanoi.java), [TowerOfHanoiTest.java](./src/test/java/moe/ijnji/epi/TowerOfHanoiTest.java)
 13. Dynamic Programming
     * 17.1:
 14. Greedy & Invariants

@@ -1,4 +1,4 @@
-public class Parity1 {
+public class Parity {
 
     private static int[] LUT = new int[0xFF + 1];
 

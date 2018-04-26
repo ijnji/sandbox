@@ -16,10 +16,10 @@ public class TowerOfHanoi {
 
    private static void move(List<List<Integer>> pegs, int amount, int source, int target, int thru) {
        if (amount == 0) return;
-       move(pegs, --amount, source, thru, target);
+       move(pegs, amount - 1, source, thru, target);
        int p = pegs.get(source).remove(pegs.get(source).size() - 1);
        pegs.get(target).add(p);
-       move(pegs, --amount, thru, target, source);
+       move(pegs, amount - 1, thru, target, source);
    }
 
 }
