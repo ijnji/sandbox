@@ -1,7 +1,8 @@
 package moe.ijnji.epi;
 
-import static org.junit.Assert.assertTrue;
 import org.junit.Test;
+
+import static org.junit.Assert.assertTrue;
 
 public class RectangularIntersectionTest {
 
