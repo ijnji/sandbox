@@ -1,12 +1,13 @@
 package moe.ijnji.epi;
 
+import org.junit.Test;
+
 import java.util.ArrayList;
 import java.util.List;
-import org.junit.Test;
 
 import static org.junit.Assert.assertTrue;
 
-public class TowerOfHanoiTest {
+public class NonattackingQueenTest {
 
     private static boolean check(List<List<Integer>> pegs) {
         if (pegs.get(0).size() != 0) return false;
