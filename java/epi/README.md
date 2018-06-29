@@ -28,6 +28,7 @@
     * 14.1:
 12. Recursion
     * 15.1: [TowerOfHanoi.java](./src/main/java/moe/ijnji/epi/TowerOfHanoi.java), [Test](./src/test/java/moe/ijnji/epi/TowerOfHanoiTest.java)
+    * 15.2: [NQueens.java](./src/main/java/moe/ijnji/epi/NQueens.java)
 13. Dynamic Programming
     * 16.1:
 14. Greedy & Invariants
