@@ -9,12 +9,9 @@ import os
 import re
 import sys
 
-main_path = '/src/main/java/moe/ijnji/epi'
-test_path = '/src/test/java/moe/ijnji/epi'
-
+main_relative_path = '/src/main/java/moe/ijnji/epi'
+test_relative_path = '/src/test/java/moe/ijnji/epi'
 root_path = os.path.dirname(os.path.abspath(__file__))
-main_path = root_path + main_path
-test_path = root_path + test_path
 
 def read_arguments():
     parser = argparse.ArgumentParser()
@@ -52,23 +49,67 @@ def create_problem(arguments):
         create_test(number, problem)
 
 def insert_readme(number, problem):
-    def get_current_number(line):
+    def infer_chapter_number(line):
+        pattern = re.compile(r'^\s*([0-9]+)\.')
+        result = pattern.search(line)
+        if result:
+            return int(result.group(1))
+        return None
+
+    def infer_problem_number(line):
         pattern = re.compile(r'([0-9]+\.[0-9]+)')
         result = pattern.search(line)
-        if result is not None:
+        if result:
             return float(result.group(1))
         return None
 
+    def get_entry(number, problem):
+        return '    * {}: [{}.java](.{}/{}.java) ([Test](.{}/{}.java))\n' \
+            .format(number, problem, main_relative_path, problem, test_relative_path, problem)
+
     src_readme_file = open(root_path + '/README.md', 'r')
-    dest_readme_file = open(root_path + 'README.md.new', 'w')
-    for line in readme_file:
-        current_number = get_current_number(line)
-        if current_number is None:
+    dest_readme_file = open(root_path + '/README.md.new', 'w')
+
+    # Move lines into destination file until target problem chapter
+    chapter = int(number)
+    line = src_readme_file.readline()
+    while line:
+        inferred_chapter = infer_chapter_number(line)
+        if inferred_chapter == chapter:
             dest_readme_file.write(line)
-            continue
-        if current_number > number:
+            break
+        else:
+            dest_readme_file.write(line)
+        line = src_readme_file.readline()
 
+    # Move lines into destination file until target problem number or a new chapter
+    line = src_readme_file.readline()
+    while line:
+        inferred_chapter = infer_chapter_number(line)
+        inferred_number = infer_problem_number(line)
+        if inferred_chapter:
+            dest_readme_file.write(get_entry(number, problem))
+            dest_readme_file.write(line)
+            break
+        elif inferred_number < number:
+            dest_readme_file.write(line)
+        elif inferred_number == number:
+            dest_readme_file.write(get_entry(number, problem))
+            break
+        else:
+            dest_readme_file.write(get_entry(number, problem))
+            dest_readme_file.write(line)
+            break
+        line = src_readme_file.readline()
 
+    # Move remaining lines
+    line = src_readme_file.readline()
+    while line:
+        dest_readme_file.write(line)
+        line = src_readme_file.readline()
+
+    os.rename(root_path + '/README.md', 'README.md.old')
+    os.rename(root_path + '/README.md.new', 'README.md')
 
 if __name__ == '__main__':
     arguments = read_arguments()
