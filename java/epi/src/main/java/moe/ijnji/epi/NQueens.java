@@ -4,6 +4,9 @@
 
 package moe.ijnji.epi;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class NQueens {
 
     public static List<List<Integer>> nQueens(int n) {

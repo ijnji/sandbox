@@ -1,3 +1,7 @@
+// Description:
+//
+// Count the number of bits in an integer.
+
 package moe.ijnji.epi;
 
 public class CountBits {

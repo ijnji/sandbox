@@ -5,12 +5,12 @@
 // to another word, where the edit operations comprise of 1) replacing a letter,
 // 2) inserting a letter, and 3) deleting a letter.
 
-package epi;
+package moe.ijnji.epi;
 
 import java.lang.Math;
 import java.util.Arrays;
 import java.util.List;
-import static rlib.TestingUtils.expect;
+
 
 public class LevenshteinDistance {
 
@@ -34,17 +34,17 @@ public class LevenshteinDistance {
   private static void smallTest() {
     List<String>  words;
     words = Arrays.asList("", "");
-    expect(levenshteinDistance(words.get(0), words.get(1))).toBe(0);
+    //expect(levenshteinDistance(words.get(0), words.get(1))).toBe(0);
     words = Arrays.asList("a", "a");
-    expect(levenshteinDistance(words.get(0), words.get(1))).toBe(0);
+    //expect(levenshteinDistance(words.get(0), words.get(1))).toBe(0);
     words = Arrays.asList("z", "x");
-    expect(levenshteinDistance(words.get(0), words.get(1))).toBe(1);
+    //expect(levenshteinDistance(words.get(0), words.get(1))).toBe(1);
     words = Arrays.asList("Friday", "Friday");
-    expect(levenshteinDistance(words.get(0), words.get(1))).toBe(0);
+    //expect(levenshteinDistance(words.get(0), words.get(1))).toBe(0);
     words = Arrays.asList("Saturday", "Sundays");
-    expect(levenshteinDistance(words.get(0), words.get(1))).toBe(4);
+    //expect(levenshteinDistance(words.get(0), words.get(1))).toBe(4);
     words = Arrays.asList("Carthorse", "Orchestra");
-    expect(levenshteinDistance(words.get(0), words.get(1))).toBe(8);
+    //expect(levenshteinDistance(words.get(0), words.get(1))).toBe(8);
   }
 
   public static void main(String[] args) {

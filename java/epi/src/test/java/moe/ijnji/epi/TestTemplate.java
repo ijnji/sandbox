@@ -2,7 +2,7 @@ package moe.ijnji.epi;
 
 import org.junit.Test;
 
-public class PLACEHOLDER {
+public class TestTemplate {
 
     @Test
     public void testSimple() {
