@@ -4,8 +4,9 @@ import java.util.Arrays;
 import moe.ijnji.rlib.LinkedListNode;
 import moe.ijnji.rlib.ListUtils;
 import org.junit.Test;
-
-import static org.junit.Assert.assertTrue;
+import static moe.ijnji.epi.ReverseSublist.reverse;
+import static org.hamcrest.CoreMatchers.is;
+import static org.junit.Assert.assertThat;
 
 public class ReverseSublistTest {
 
@@ -24,24 +25,24 @@ public class ReverseSublistTest {
         LinkedListNode<Integer> head, result, expected;
 
         head = ListUtils.buildSingleList(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
-        result = ReverseSublist.reverse(head, 1, 8);
+        result = reverse(head, 1, 8);
         expected = ListUtils.buildSingleList(Arrays.asList(1, 9, 8, 7, 6, 5, 4, 3, 2, 10));
-        assertTrue(check(result, expected));
+        assertThat(check(result, expected), is(true));
 
         head = ListUtils.buildSingleList(Arrays.asList(1));
-        result = ReverseSublist.reverse(head, 0, 0);
+        result = reverse(head, 0, 0);
         expected = ListUtils.buildSingleList(Arrays.asList(1));
-        assertTrue(check(result, expected));
+        assertThat(check(result, expected), is(true));
 
         head = ListUtils.buildSingleList(Arrays.asList(1, 2));
-        result = ReverseSublist.reverse(head, 0, 1);
+        result = reverse(head, 0, 1);
         expected = ListUtils.buildSingleList(Arrays.asList(2, 1));
-        assertTrue(check(result, expected));
+        assertThat(check(result, expected), is(true));
 
         head = ListUtils.buildSingleList(Arrays.asList(1, 2));
-        result = ReverseSublist.reverse(head, 1, 1);
+        result = reverse(head, 1, 1);
         expected = ListUtils.buildSingleList(Arrays.asList(1, 2));
-        assertTrue(check(result, expected));
+        assertThat(check(result, expected), is(true));
     }
 
 }

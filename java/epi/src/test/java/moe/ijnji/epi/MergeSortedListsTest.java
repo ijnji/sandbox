@@ -4,8 +4,9 @@ import java.util.Arrays;
 import moe.ijnji.rlib.LinkedListNode;
 import moe.ijnji.rlib.ListUtils;
 import org.junit.Test;
-
-import static org.junit.Assert.assertTrue;
+import static moe.ijnji.epi.MergeSortedLists.mergeTwoLists;
+import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.MatcherAssert.assertThat;
 
 public class MergeSortedListsTest {
 
@@ -29,15 +30,15 @@ public class MergeSortedListsTest {
 
         headA = ListUtils.buildSingleList(Arrays.asList(1, 2, 3, 4, 5));
         headB = ListUtils.buildSingleList(Arrays.asList(6, 7, 8, 9, 10));
-        result = MergeSortedLists.mergeTwoLists(headA, headB);
+        result = mergeTwoLists(headA, headB);
         expected = ListUtils.buildSingleList(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
-        assertTrue(check(result, expected));
+        assertThat(check(result, expected), is(true));
 
         headA = ListUtils.buildSingleList(Arrays.asList(2, 4, 6, 8, 10));
         headB = ListUtils.buildSingleList(Arrays.asList(1, 3, 5, 7, 9));
-        result = MergeSortedLists.mergeTwoLists(headA, headB);
+        result = mergeTwoLists(headA, headB);
         expected = ListUtils.buildSingleList(Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
-        assertTrue(check(result, expected));
+        assertThat(check(result, expected), is(true));
     }
 
 }

@@ -3,8 +3,8 @@ package moe.ijnji.epi;
 import java.util.ArrayList;
 import java.util.List;
 import org.junit.Test;
-
-import static org.junit.Assert.assertTrue;
+import static org.hamcrest.CoreMatchers.is;
+import static org.junit.Assert.assertThat;
 
 public class TowerOfHanoiTest {
 
@@ -40,18 +40,18 @@ public class TowerOfHanoiTest {
 
         pegs = construct(1);
         TowerOfHanoi.solve(pegs);
-        assertTrue(check(pegs));
+        assertThat(check(pegs), is(true));
 
         pegs = construct(2);
         TowerOfHanoi.solve(pegs);
-        assertTrue(check(pegs));
+        assertThat(check(pegs), is(true));
 
         pegs = construct(3);
         TowerOfHanoi.solve(pegs);
-        assertTrue(check(pegs));
+        assertThat(check(pegs), is(true));
 
         pegs = construct(15);
         TowerOfHanoi.solve(pegs);
-        assertTrue(check(pegs));
+        assertThat(check(pegs), is(true));
     }
 }

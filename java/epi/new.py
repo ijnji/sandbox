@@ -112,7 +112,7 @@ def insert_readme(number, problem):
     os.rename('{}/README.md.new'.format(root_path), 'README.md')
 
 def create_main(problem):
-    main_template_file = open('{}{}/MainTemplate.java'.format(root_path, main_relative_path), 'r')
+    main_template_file = open('{}{}/MainTemplate.txt'.format(root_path, main_relative_path), 'r')
     main_class_file = open('{}{}/{}.java'.format(root_path, main_relative_path, problem), 'w')
 
     for line in main_template_file:
@@ -121,7 +121,7 @@ def create_main(problem):
         main_class_file.write(line)
 
 def create_test(problem):
-    test_template_file = open('{}{}/TestTemplate.java'.format(root_path, test_relative_path), 'r')
+    test_template_file = open('{}{}/TestTemplate.txt'.format(root_path, test_relative_path), 'r')
     test_class_file = open('{}{}/{}Test.java'.format(root_path, test_relative_path, problem), 'w')
 
     for line in test_template_file:

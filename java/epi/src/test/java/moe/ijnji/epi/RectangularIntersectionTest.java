@@ -1,8 +1,9 @@
 package moe.ijnji.epi;
 
 import org.junit.Test;
-
-import static org.junit.Assert.assertTrue;
+import static moe.ijnji.epi.RectangularIntersection.intersects;
+import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.MatcherAssert.assertThat;
 
 public class RectangularIntersectionTest {
 
@@ -21,14 +22,14 @@ public class RectangularIntersectionTest {
 
         A = new Rectangle(0, 0, 4, 4);
         B = new Rectangle(1, 1, 5, 5);
-        result = RectangularIntersection.intersects(A, B);
+        result = intersects(A, B);
         expected = new Rectangle(1, 1, 3, 3);
-        assertTrue(check(result, expected));
+        assertThat(check(result, expected), is(true));
 
         A = new Rectangle(0, 0, 2, 2);
         B = new Rectangle(4, 4, 6, 6);
-        result = RectangularIntersection.intersects(A, B);
+        result = intersects(A, B);
         expected = null;
-        assertTrue(check(result, expected));
+        assertThat(check(result, expected), is(true));
     }
 }
