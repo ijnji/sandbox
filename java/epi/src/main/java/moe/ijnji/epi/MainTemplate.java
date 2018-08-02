@@ -4,7 +4,7 @@
 
 package moe.ijnji.epi;
 
-public class MainTemplate {
+public class REPLACE {
 
     public static void func() {
     }

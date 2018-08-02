@@ -43,10 +43,10 @@ def create_problem(arguments):
         insert_readme(number, problem)
 
     if main:
-        create_main(number, problem)
+        create_main(problem)
 
     if test:
-        create_test(number, problem)
+        create_test(problem)
 
 def insert_readme(number, problem):
     def infer_chapter_number(line):
@@ -67,8 +67,8 @@ def insert_readme(number, problem):
         return '    * {}: [{}.java](.{}/{}.java) ([Test](.{}/{}.java))\n' \
             .format(number, problem, main_relative_path, problem, test_relative_path, problem)
 
-    src_readme_file = open(root_path + '/README.md', 'r')
-    dest_readme_file = open(root_path + '/README.md.new', 'w')
+    src_readme_file = open('{}/README.md'.format(root_path), 'r')
+    dest_readme_file = open('{}/README.md.new'.format(root_path), 'w')
 
     # Move lines into destination file until target problem chapter
     chapter = int(number)
@@ -108,8 +108,26 @@ def insert_readme(number, problem):
         dest_readme_file.write(line)
         line = src_readme_file.readline()
 
-    os.rename(root_path + '/README.md', 'README.md.old')
-    os.rename(root_path + '/README.md.new', 'README.md')
+    os.rename('{}/README.md'.format(root_path), 'README.md.old')
+    os.rename('{}/README.md.new'.format(root_path), 'README.md')
+
+def create_main(problem):
+    main_template_file = open('{}{}/MainTemplate.java'.format(root_path, main_relative_path), 'r')
+    main_class_file = open('{}{}/{}.java'.format(root_path, main_relative_path, problem), 'w')
+
+    for line in main_template_file:
+        pattern = re.compile(r'REPLACE')
+        line = pattern.sub(problem, line)
+        main_class_file.write(line)
+
+def create_test(problem):
+    test_template_file = open('{}{}/TestTemplate.java'.format(root_path, test_relative_path), 'r')
+    test_class_file = open('{}{}/{}Test.java'.format(root_path, test_relative_path, problem), 'w')
+
+    for line in test_template_file:
+        pattern = re.compile(r'REPLACE')
+        line = pattern.sub('{}Test'.format(problem), line)
+        test_class_file.write(line)
 
 if __name__ == '__main__':
     arguments = read_arguments()
