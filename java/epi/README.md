@@ -1,9 +1,9 @@
 ### Elements of Programming Interviews
 
 4. Primitive Types
-    * 4.0: [CountBits.java](./src/main/java/moe/ijnji/epi/CountBits.java)
-    * 4.1: [Parity.java](./src/main/java/moe/ijnji/epi/Parity.java)
-    * 4.2: [SwapBits.java](./src/main/java/moe/ijnji/epi/SwapBits.java)
+    * 4.0: [CountBits.java](./src/main/java/moe/ijnji/epi/CountBits.java) ([Test](./src/test/java/moe/ijnji/epi/CountBitsTest.java))
+    * 4.1: [Parity.java](./src/main/java/moe/ijnji/epi/Parity.java) ([Test](./src/test/java/moe/ijnji/epi/ParityTest.java))
+    * 4.2: [SwapBits.java](./src/main/java/moe/ijnji/epi/SwapBits.java) ([Test](./src/test/java/moe/ijnji/epi/SwapBitsTest.java))
     * 4.11: [RectangularIntersection.java](./src/main/java/moe/ijnji/epi/RectangularIntersection.java) ([Test](./src/test/java/moe/ijnji/epi/RectangularIntersectionTest.java))
 5. Arrays
     * 5.4: [JumpGame.java](./src/main/java/moe/ijnji/epi/JumpGame.java) ([Test](./src/test/java/moe/ijnji/epi/JumpGameTest.java))
