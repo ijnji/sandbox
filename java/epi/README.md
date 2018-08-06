@@ -25,7 +25,7 @@
 8. Stacks & Queues
     * 8.1:
 9. Binary Trees
-    * 9.1: [BalancedBinaryTree.java](./src/main/java/moe/ijnji/epi/BalancedBinaryTree.java)
+    * 9.1: [BalancedBinaryTree.java](./src/main/java/moe/ijnji/epi/BalancedBinaryTree.java) ([Test](./src/test/java/moe/ijnji/epi/BalancedBinaryTreeTest.java))
     * 9.2: [SymmetricBinaryTree.java](./src/main/java/moe/ijnji/epi/SymmetricBinaryTree.java)
     * 9.3: [LowestCommonAncestor.java](./src/main/java/moe/ijnji/epi/LowestCommonAncestor.java)
     * 9.4: [LowestCommonAncestorWithParent.java](./src/main/java/moe/ijnji/epi/LowestCommonAncestorWithParent.java)
