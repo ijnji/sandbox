@@ -46,6 +46,7 @@
 15. Recursion
     * 15.1: [TowerOfHanoi.java](./src/main/java/moe/ijnji/epi/TowerOfHanoi.java) ([Test](./src/test/java/moe/ijnji/epi/TowerOfHanoiTest.java))
     * 15.2: [NQueens.java](./src/main/java/moe/ijnji/epi/NQueens.java)
+    * 15.3: [Permutations.java](./src/main/java/moe/ijnji/epi/Permutations.java) ([Test](./src/test/java/moe/ijnji/epi/Permutations.java))
 16. Dynamic Programming
     * 16.1: [ScoreCombination.java](./src/main/java/moe/ijnji/epi/ScoreCombination.java)
     * 16.2: [LevenshteinDistance.java](./src/main/java/moe/ijnji/epi/LevenshteinDistance.java)
