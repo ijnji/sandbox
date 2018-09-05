@@ -47,6 +47,7 @@
     * 15.1: [TowerOfHanoi.java](./src/main/java/moe/ijnji/epi/TowerOfHanoi.java) ([Test](./src/test/java/moe/ijnji/epi/TowerOfHanoiTest.java))
     * 15.2: [NQueens.java](./src/main/java/moe/ijnji/epi/NQueens.java)
     * 15.3: [Permutations.java](./src/main/java/moe/ijnji/epi/Permutations.java) ([Test](./src/test/java/moe/ijnji/epi/PermutationsTest.java))
+    * 15.4: [PowerSet.java](./src/main/java/moe/ijnji/epi/PowerSet.java)
 16. Dynamic Programming
     * 10.0: [LongestDecreasing.java](./src/main/java/moe/ijnji/epi/LongestDecreasing.java) ([Test](./src/test/java/moe/ijnji/epi/LongestDecreasingTest.java))
     * 16.1: [ScoreCombination.java](./src/main/java/moe/ijnji/epi/ScoreCombination.java)
