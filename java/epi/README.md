@@ -12,9 +12,9 @@
 7. Linked Lists
     * 7.1: [MergeSortedLists.java](./src/main/java/moe/ijnji/epi/MergeSortedLists.java) ([Test](./src/test/java/moe/ijnji/epi/MergeSortedListsTest.java))
     * 7.2: [ReverseSublist.java](./src/main/java/moe/ijnji/epi/ReverseSublist.java) ([Test](./src/test/java/moe/ijnji/epi/ReverseSublistTest.java))
-    * 7.3: [CheckCycle.java](./src/main/java/moe/ijnji/epi/CheckCycle.java)
-    * 7.4: [CheckOverlap.java](./src/main/java/moe/ijnji/epi/CheckOverlap.java)
-    * 7.6: [RemoveFromSingle.java](./src/main/java/moe/ijnji/epi/RemoveFromSingle.java)
+    * 7.3: [CheckCycle.java](./src/main/java/moe/ijnji/epi/CheckCycle.java) ([Test](./src/test/java/moe/ijnji/epi/CheckCycleTest.java))
+    * 7.4: [CheckOverlap.java](./src/main/java/moe/ijnji/epi/CheckOverlap.java) ([Test](./src/test/java/moe/ijnji/epi/CheckOverlap.java))
+    * 7.6: [RemoveFromSingle.java](./src/main/java/moe/ijnji/epi/RemoveFromSingle.java) ([Test](./src/test/java/moe/ijnji/epi/RemoveFromSingle.java))
     * 7.7: [RemoveKthLast.java](./src/main/java/moe/ijnji/epi/RemoveKthLast.java)
     * 7.8: [RemoveDuplicates.java](./src/main/java/moe/ijnji/epi/RemoveDuplicates.java)
     * 7.9: [CyclicRightShift.java](./src/main/java/moe/ijnji/epi/CyclicRightShift.java)
@@ -46,7 +46,7 @@
 15. Recursion
     * 15.1: [TowerOfHanoi.java](./src/main/java/moe/ijnji/epi/TowerOfHanoi.java) ([Test](./src/test/java/moe/ijnji/epi/TowerOfHanoiTest.java))
     * 15.2: [NQueens.java](./src/main/java/moe/ijnji/epi/NQueens.java)
-    * 15.3: [Permutations.java](./src/main/java/moe/ijnji/epi/Permutations.java) ([Test](./src/test/java/moe/ijnji/epi/Permutations.java))
+    * 15.3: [Permutations.java](./src/main/java/moe/ijnji/epi/Permutations.java) ([Test](./src/test/java/moe/ijnji/epi/PermutationsTest.java))
 16. Dynamic Programming
     * 10.0: [LongestDecreasing.java](./src/main/java/moe/ijnji/epi/LongestDecreasing.java) ([Test](./src/test/java/moe/ijnji/epi/LongestDecreasingTest.java))
     * 16.1: [ScoreCombination.java](./src/main/java/moe/ijnji/epi/ScoreCombination.java)
