@@ -15,7 +15,7 @@
     * 7.3: [CheckCycle.java](./src/main/java/moe/ijnji/epi/CheckCycle.java) ([Test](./src/test/java/moe/ijnji/epi/CheckCycleTest.java))
     * 7.4: [CheckOverlap.java](./src/main/java/moe/ijnji/epi/CheckOverlap.java) ([Test](./src/test/java/moe/ijnji/epi/CheckOverlap.java))
     * 7.6: [RemoveFromSingle.java](./src/main/java/moe/ijnji/epi/RemoveFromSingle.java) ([Test](./src/test/java/moe/ijnji/epi/RemoveFromSingle.java))
-    * 7.7: [RemoveKthLast.java](./src/main/java/moe/ijnji/epi/RemoveKthLast.java)
+    * 7.7: [RemoveKthLast.java](./src/main/java/moe/ijnji/epi/RemoveKthLast.java) ([Test](./src/test/java/moe/ijnji/epi/RemoveKthLast.java))
     * 7.8: [RemoveDuplicates.java](./src/main/java/moe/ijnji/epi/RemoveDuplicates.java)
     * 7.9: [CyclicRightShift.java](./src/main/java/moe/ijnji/epi/CyclicRightShift.java)
     * 7.10: [MergeEvenOdd.java](./src/main/java/moe/ijnji/epi/MergeEvenOdd.java)
@@ -57,4 +57,4 @@
 17. Greedy & Invariants
     * 17.1:
 18. Graphs
-    * 18.1:
+    * 18.1: [SearchMaze.java](./src/main/java/moe/ijnji/epi/SearchMaze.java) ([Test](./src/test/java/moe/ijnji/epi/SearchMaze.java))
