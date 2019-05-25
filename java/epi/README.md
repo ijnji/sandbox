@@ -6,6 +6,9 @@
     * 4.2: [SwapBits.java](./src/main/java/moe/ijnji/epi/SwapBits.java) ([Test](./src/test/java/moe/ijnji/epi/SwapBitsTest.java))
     * 4.11: [RectangularIntersection.java](./src/main/java/moe/ijnji/epi/RectangularIntersection.java) ([Test](./src/test/java/moe/ijnji/epi/RectangularIntersectionTest.java))
 5. Arrays
+    * 5.1: [DutchNationalFlag.java](./src/main/java/moe/ijnji/epi/DutchNationalFlag.java) ([Test](./src/test/java/moe/ijnji/epi/DutchNationalFlag.java))
+    * 5.2: [IntAsListIncrement.java](./src/main/java/moe/ijnji/epi/IntAsListIncrement.java) ([Test](./src/test/java/moe/ijnji/epi/IntAsListIncrement.java))
+    * 5.3: [IntAsListMultiply.java](./src/main/java/moe/ijnji/epi/IntAsListMultiply.java) ([Test](./src/test/java/moe/ijnji/epi/IntAsListMultiply.java))
     * 5.4: [JumpGame.java](./src/main/java/moe/ijnji/epi/JumpGame.java) ([Test](./src/test/java/moe/ijnji/epi/JumpGameTest.java))
 6. Strings
     * 6.1: [InterconvertingStringInteger.java](./src/main/java/moe/ijnji/epi/InterconvertingStringInteger.java) ([Test](./src/test/java/moe/ijnji/epi/InterconvertingStringIntegerTest.java))
@@ -16,8 +19,8 @@
     * 7.4: [CheckOverlap.java](./src/main/java/moe/ijnji/epi/CheckOverlap.java) ([Test](./src/test/java/moe/ijnji/epi/CheckOverlap.java))
     * 7.6: [RemoveFromSingle.java](./src/main/java/moe/ijnji/epi/RemoveFromSingle.java) ([Test](./src/test/java/moe/ijnji/epi/RemoveFromSingle.java))
     * 7.7: [RemoveKthLast.java](./src/main/java/moe/ijnji/epi/RemoveKthLast.java) ([Test](./src/test/java/moe/ijnji/epi/RemoveKthLast.java))
-    * 7.8: [RemoveDuplicates.java](./src/main/java/moe/ijnji/epi/RemoveDuplicates.java)
-    * 7.9: [CyclicRightShift.java](./src/main/java/moe/ijnji/epi/CyclicRightShift.java)
+    * 7.8: [RemoveDuplicates.java](./src/main/java/moe/ijnji/epi/RemoveDuplicates.java) ([Test](./src/test/java/moe/ijnji/epi/RemoveDuplicates.java))
+    * 7.9: [CyclicRightShift.java](./src/main/java/moe/ijnji/epi/CyclicRightShift.java) ([Test](./src/test/java/moe/ijnji/epi/CyclicRightShift.java))
     * 7.10: [MergeEvenOdd.java](./src/main/java/moe/ijnji/epi/MergeEvenOdd.java)
     * 7.11: [CheckListPalindrome.java](./src/main/java/moe/ijnji/epi/CheckListPalindrome.java)
     * 7.12: [PivotList.java](./src/main/java/moe/ijnji/epi/PivotList.java)
