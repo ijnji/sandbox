@@ -7,8 +7,8 @@
     * 4.11: [RectangularIntersection.java](./src/main/java/moe/ijnji/epi/RectangularIntersection.java) ([Test](./src/test/java/moe/ijnji/epi/RectangularIntersectionTest.java))
 5. Arrays
     * 5.1: [DutchNationalFlag.java](./src/main/java/moe/ijnji/epi/DutchNationalFlag.java) ([Test](./src/test/java/moe/ijnji/epi/DutchNationalFlag.java))
-    * 5.2: [IntAsListIncrement.java](./src/main/java/moe/ijnji/epi/IntAsListIncrement.java) ([Test](./src/test/java/moe/ijnji/epi/IntAsListIncrement.java))
-    * 5.3: [IntAsListMultiply.java](./src/main/java/moe/ijnji/epi/IntAsListMultiply.java) ([Test](./src/test/java/moe/ijnji/epi/IntAsListMultiply.java))
+    * 5.2: [IntAsListIncrement.java](./src/main/java/moe/ijnji/epi/IntAsListIncrement.java)
+    * 5.3: [IntAsListMultiply.java](./src/main/java/moe/ijnji/epi/IntAsListMultiply.java)
     * 5.4: [JumpGame.java](./src/main/java/moe/ijnji/epi/JumpGame.java) ([Test](./src/test/java/moe/ijnji/epi/JumpGameTest.java))
 6. Strings
     * 6.1: [InterconvertingStringInteger.java](./src/main/java/moe/ijnji/epi/InterconvertingStringInteger.java) ([Test](./src/test/java/moe/ijnji/epi/InterconvertingStringIntegerTest.java))
