@@ -57,6 +57,7 @@
     * 16.2: [LevenshteinDistance.java](./src/main/java/moe/ijnji/epi/LevenshteinDistance.java)
     * 16.3: [NumberWays.java](./src/main/java/moe/ijnji/epi/NumberWays.java)
     * 16.4: [ComputingBinomialCoefficients.java](./src/main/java/moe/ijnji/epi/ComputingBinomialCoefficients.java)
+    * 16.5: [IsStringInMatrix.java](./src/main/java/moe/ijnji/epi/IsStringInMatrix.java)
 17. Greedy & Invariants
     * 17.1:
 18. Graphs
