@@ -57,10 +57,10 @@ def insert_readme(number, problem):
         return None
 
     def infer_problem_number(line):
-        pattern = re.compile(r'([0-9]+\.[0-9]+)')
+        pattern = re.compile(r'\s*\*\s*[0-9]+\.([0-9]+):')
         result = pattern.search(line)
         if result:
-            return float(result.group(1))
+            return int(result.group(1))
         return None
 
     def get_entry(number, problem):

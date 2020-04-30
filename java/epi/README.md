@@ -4,6 +4,7 @@
     * 4.0: [CountBits.java](./src/main/java/moe/ijnji/epi/CountBits.java) ([Test](./src/test/java/moe/ijnji/epi/CountBitsTest.java))
     * 4.1: [Parity.java](./src/main/java/moe/ijnji/epi/Parity.java) ([Test](./src/test/java/moe/ijnji/epi/ParityTest.java))
     * 4.2: [SwapBits.java](./src/main/java/moe/ijnji/epi/SwapBits.java) ([Test](./src/test/java/moe/ijnji/epi/SwapBitsTest.java))
+    * 4.3: [ReverseBits.java](./src/main/java/moe/ijnji/epi/ReverseBits.java) ([Test](./src/test/java/moe/ijnji/epi/ReverseBits.java))
     * 4.11: [RectangularIntersection.java](./src/main/java/moe/ijnji/epi/RectangularIntersection.java) ([Test](./src/test/java/moe/ijnji/epi/RectangularIntersectionTest.java))
 5. Arrays
     * 5.1: [DutchNationalFlag.java](./src/main/java/moe/ijnji/epi/DutchNationalFlag.java) ([Test](./src/test/java/moe/ijnji/epi/DutchNationalFlag.java))
