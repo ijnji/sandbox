@@ -1,29 +1,36 @@
 ## Notes
 
 ### Primitives
+
 ```java
 long lg = 1L;
 float	ft = 1.2f;
 double	dl = 1.2d;
 char ch = '\u1111';
 ```
+
 ```java
 int it = Integer.MIN_VALUE; // -2147483648
 float ft = Float.MAX_VALUE; // -2.14748365E9
 double dl = Double.SIZE; // 64 (bits)
 boolean bl = Boolean.TRUE; // true
 ```
+
 ```java
 double dl = Double.valueOf("1.23");
 boolean bl = Boolean.valueOf(true);
 int it = Integer.parseInt("42");
 String sfl = Float.toString(-1.23);
 ```
-* `Double.compare(dl, 1.23) == 0` or `dl.compareTo(1.23) == 0` over `x == 1.23`
-* `Math.*`: `abs(-34.5)`, `ceil(2.17)`, `floor(3.14)`, `min(x, -4)`, `max(3.14, y)`, `pow(2.71, 3.14)`, `sqrt(225)`
-* `Random.*`: `nextInt(16)`, `nextBoolean()`, `nextDouble()`
 
-### Bitwise Operations
+Prefer `Double.compare(dl, 1.23) == 0` or `dl.compareTo(1.23) == 0` over `x == 1.23`  
+
+`Math.*`: `abs(-34.5)`, `ceil(2.17)`, `floor(3.14)`, `min(x, -4)`, `max(3.14, y)`, `pow(2.71, 3.14)`, `sqrt(225)`  
+
+`Random.*`: `nextInt(16)`, `nextBoolean()`, `nextDouble()`  
+
+### Bitwise
+
 ```java
 int a = 6 & 4; // 2 == 0b100
 int b = 1 | 2; // 3 == 0b11
@@ -35,14 +42,17 @@ int g = 0xFF ^ 0xAA; // 0x55
 ```
 
 ### Arrays
+
 ```java
 int one[] = new int[]{1, 2, 3};
 int two[][] = new int[3][];
 int len = two.length;
 ```
-* `Arrays.*`: `binarySearch(A, 5)`, `copyOf(A)`, `copyOfRange(A, 1, 5)`, `equals(A, B)`, `fill(A, 42)`, `find(A, 28)`, `sort(A)`, `sort(A, cmp)`, `toString()`
+
+`Arrays.*`: `binarySearch(A, 5)`, `copyOf(A)`, `copyOfRange(A, 1, 5)`, `equals(A, B)`, `fill(A, 42)`, `find(A, 28)`, `sort(A)`, `sort(A, cmp)`, `toString()`
 
 ### Strings
+
 ```java
 StringBuilder sb = new StringBuilder();
 sb.append("a");
@@ -54,6 +64,7 @@ sb.reverse();
 sb.replace(startInclusive, endExclusive, "hello");
 sb.toString();
 ```
+
 ```java
 String s = "orange";
 char c = s.charAt(1);
@@ -80,8 +91,10 @@ String lr = s.toLowerCase();
 String ur = s.toUpperCase();
 String tm = s.trim();
 ```
+
 ```java
 String s = "abc";
 int cp = s.codePointAt(1);
 ```
-* `Character.*`:`codePointAt(input, startInclusive)`, `toChars(codePoint)`, `charCount(codePoint)`
+
+`Character.*`:`codePointAt(input, startInclusive)`, `toChars(codePoint)`, `charCount(codePoint)`
