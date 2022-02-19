@@ -20,7 +20,7 @@
     </dependency>
     <dependency>
       <groupId>moe.ijnji</groupId>
-      <artifactId>rlib</artifactId>
+      <artifactId>rjlib</artifactId>
       <version>1.0-SNAPSHOT</version>
     </dependency>
     <dependency>

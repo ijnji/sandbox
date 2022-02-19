@@ -1,8 +1,8 @@
 package moe.ijnji.epi;
 
 import java.util.Arrays;
-import moe.ijnji.rlib.LinkedListNode;
-import moe.ijnji.rlib.ListUtils;
+import moe.ijnji.rjlib.LinkedListNode;
+import moe.ijnji.rjlib.ListUtils;
 import org.junit.Test;
 import static moe.ijnji.epi.CheckOverlap.checkOverlap;
 import static org.hamcrest.MatcherAssert.assertThat;

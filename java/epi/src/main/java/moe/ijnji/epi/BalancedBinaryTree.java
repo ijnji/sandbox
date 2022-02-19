@@ -5,7 +5,7 @@
 package moe.ijnji.epi;
 
 import java.lang.Math;
-import moe.ijnji.rlib.BinaryTreeNode;
+import moe.ijnji.rjlib.BinaryTreeNode;
 
 public class BalancedBinaryTree {
 

@@ -6,8 +6,8 @@
 package moe.ijnji.epi;
 
 import java.util.Arrays;
-import moe.ijnji.rlib.ListUtils;
-import moe.ijnji.rlib.LinkedListNode;
+import moe.ijnji.rjlib.ListUtils;
+import moe.ijnji.rjlib.LinkedListNode;
 
 public class CheckOverlap {
 
