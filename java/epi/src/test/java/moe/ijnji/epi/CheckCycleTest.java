@@ -1,6 +1,6 @@
 package moe.ijnji.epi;
 
-import moe.ijnji.rlib.LinkedListNode;
+import moe.ijnji.rjlib.LinkedListNode;
 import org.junit.Test;
 import static moe.ijnji.epi.CheckCycle.checkCycle;
 import static org.hamcrest.MatcherAssert.assertThat;

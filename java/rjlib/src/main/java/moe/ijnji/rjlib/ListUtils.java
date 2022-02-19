@@ -1,4 +1,4 @@
-package moe.ijnji.rlib;
+package moe.ijnji.rjlib;
 
 import java.util.List;
 

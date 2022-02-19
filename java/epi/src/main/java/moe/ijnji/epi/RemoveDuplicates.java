@@ -4,7 +4,7 @@
 
 package moe.ijnji.epi;
 
-import moe.ijnji.rlib.LinkedListNode;
+import moe.ijnji.rjlib.LinkedListNode;
 
 
 public class RemoveDuplicates {
